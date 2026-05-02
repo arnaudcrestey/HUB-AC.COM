@@ -13,7 +13,7 @@ const inter = Inter({
 const entities = [
   {
     number: "01",
-    name: "SYXEN",
+    name: "SYSTIA",
     description: "Structuration et conception de systèmes d’activité.",
     href: "https://www.arnaudcrestey.com/",
     className: "syxen",
