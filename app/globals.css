@@ -47,7 +47,7 @@ a {
   width: 100%;
   max-width: 1180px;
   min-height: 720px;
-  padding: 70px 68px 66px;
+  padding: 70px 68px 50px;
   border-radius: 38px;
   border: 1px solid rgba(115,92,58,0.36);
   background:
@@ -181,6 +181,35 @@ a {
   opacity: 0.78;
 }
 
+/* CONTACT */
+
+.contact {
+  margin-top: 44px;
+  text-align: center;
+  font-size: 13px;
+  color: #8a7e6c;
+}
+
+.contact p {
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #5f5345;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.contact a:hover {
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
+
 /* SYSTIA */
 
 .card.systia {
@@ -271,7 +300,7 @@ a {
 
   .frame {
     min-height: auto;
-    padding: 44px 22px 26px;
+    padding: 44px 22px 28px;
     border-radius: 32px;
   }
 
@@ -334,10 +363,10 @@ a {
   }
 
   .card.astrae h2 {
-  font-size: 34px;
-  line-height: 1.04;
-  letter-spacing: -0.04em;
-}
+    font-size: 34px;
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+  }
 
   .card.qlyk h2 {
     font-size: 22px;
@@ -348,6 +377,11 @@ a {
     font-size: 14px;
     line-height: 1.65;
   }
+
+  .contact {
+    margin-top: 34px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -356,7 +390,7 @@ a {
   }
 
   .frame {
-    padding: 38px 18px 22px;
+    padding: 38px 18px 24px;
     border-radius: 28px;
   }
 
@@ -375,5 +409,9 @@ a {
   .card {
     min-height: 200px;
     padding: 23px;
+  }
+
+  .contact {
+    margin-top: 30px;
   }
 }
