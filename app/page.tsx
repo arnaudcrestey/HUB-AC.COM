@@ -43,7 +43,9 @@ export default function Page() {
       <section className="frame">
         <div className="signature">
           <div className={`${serif.className} ac`}>AC</div>
-          <div className={`${serif.className} domain`}>arnaudcrestey.com</div>
+          <div className={`${serif.className} domain`}>
+            arnaudcrestey.com
+          </div>
           <div className="line" />
           <div className="baseline">
             Développement et structuration d’entreprises
@@ -89,6 +91,14 @@ export default function Page() {
               <span className="access">Accéder</span>
             </a>
           ))}
+        </div>
+
+        {/* CONTACT DISCRET PREMIUM */}
+        <div className="contact">
+          <p>Pour toute demande spécifique</p>
+          <a href="mailto:demande@arnaudcrestey.com">
+            demande@arnaudcrestey.com
+          </a>
         </div>
       </section>
     </main>
