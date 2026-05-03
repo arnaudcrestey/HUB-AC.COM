@@ -14,7 +14,8 @@ const entities = [
   {
     number: "01",
     name: "SYSTIA",
-    description: "Structuration et conception de systèmes d’activité.",
+    description:
+      "Structurer une activité, clarifier l’offre et concevoir des systèmes capables de générer des demandes.",
     href: "https://www.systia.fr/",
     className: "systia",
   },
@@ -22,14 +23,15 @@ const entities = [
     number: "02",
     name: "Cabinet Astraé",
     description:
-      "Diagnostic et accompagnement des situations personnelles et professionnelles.",
+      "Une lecture du thème astral pour comprendre une situation en profondeur et retrouver de la clarté.",
     href: "https://www.cabinet-astrae.fr/",
     className: "astrae",
   },
   {
     number: "03",
     name: "Qlyk Studio Auto",
-    description: "Production de visuels automobiles prêts à vendre.",
+    description:
+      "Valoriser un véhicule avec des visuels premium conçus pour capter l’attention et déclencher l’achat.",
     href: "https://www.qlykstudio.fr/",
     className: "qlyk",
   },
