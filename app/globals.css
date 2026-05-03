@@ -222,8 +222,10 @@ a {
 }
 
 .card.astrae h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
 }
 
 /* QLYK */
@@ -332,8 +334,10 @@ a {
   }
 
   .card.astrae h2 {
-    font-size: 31px;
-  }
+  font-size: 34px;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
 
   .card.qlyk h2 {
     font-size: 22px;
