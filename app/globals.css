@@ -184,30 +184,29 @@ a {
 /* CONTACT */
 
 .contact {
-  margin-top: 44px;
-  text-align: center;
-  font-size: 13px;
-  color: #8a7e6c;
+  margin-top: 46px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(120, 105, 80, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(85, 76, 62, 0.72);
 }
 
-.contact p {
-  margin: 0;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
+.contact span {
+  letter-spacing: 0.04em;
 }
 
 .contact a {
-  display: inline-block;
-  margin-top: 6px;
-  color: #5f5345;
-  font-weight: 500;
+  color: rgba(55, 48, 38, 0.82);
+  font-weight: 600;
   letter-spacing: 0.01em;
-  transition: opacity 0.22s ease, transform 0.22s ease;
 }
 
 .contact a:hover {
   opacity: 0.7;
-  transform: translateY(-1px);
 }
 
 /* SYSTIA */
@@ -273,7 +272,6 @@ a {
 
 .card.qlyk:hover {
   border-color: rgba(65,122,255,0.75);
-
   box-shadow:
     0 48px 100px rgba(0,0,0,0.78),
     0 0 28px rgba(43,91,205,0.16),
@@ -381,6 +379,9 @@ a {
 
   .contact {
     margin-top: 34px;
+    padding-top: 16px;
+    flex-direction: column;
+    gap: 5px;
     font-size: 12px;
   }
 }
