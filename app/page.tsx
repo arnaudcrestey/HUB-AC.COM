@@ -16,7 +16,7 @@ const entities = [
     name: "SYSTIA",
     description: "Structuration et conception de systèmes d’activité.",
     href: "https://www.arnaudcrestey.com/",
-    className: "syxen",
+    className: "systia",
   },
   {
     number: "02",
@@ -41,13 +41,8 @@ export default function Page() {
       <section className="frame">
         <div className="signature">
           <div className={`${serif.className} ac`}>AC</div>
-
-          <div className={`${serif.className} domain`}>
-            arnaudcrestey.com
-          </div>
-
+          <div className={`${serif.className} domain`}>arnaudcrestey.com</div>
           <div className="line" />
-
           <div className="baseline">
             Développement et structuration d’entreprises
           </div>
