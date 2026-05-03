@@ -259,24 +259,23 @@ a {
 /* QLYK */
 
 .card.qlyk {
-  border: 1px solid rgba(43,91,205,0.62);
+  border: 1px solid rgba(43,91,205,0.48);
   background:
-    radial-gradient(circle at 94% 8%, rgba(43,91,205,0.24), transparent 31%),
-    radial-gradient(circle at 10% 100%, rgba(255,255,255,0.08), transparent 35%),
+    radial-gradient(circle at 94% 8%, rgba(43,91,205,0.16), transparent 28%),
+    radial-gradient(circle at 10% 100%, rgba(255,255,255,0.05), transparent 32%),
     linear-gradient(145deg, #070707 0%, #000 62%, #05070d 100%);
   box-shadow:
-    0 48px 100px rgba(0,0,0,0.68),
+    0 34px 68px rgba(0,0,0,0.56),
     inset 0 0 0 1px rgba(255,255,255,0.035);
   color: #fff;
 }
 
 .card.qlyk:hover {
-  border-color: rgba(65,122,255,0.55);
+  border-color: rgba(65,122,255,0.45);
 
   box-shadow:
-    0 42px 90px rgba(0,0,0,0.72),
-    0 18px 38px rgba(43,91,205,0.18),
-    inset 0 0 0 1px rgba(95,145,255,0.12);
+    0 36px 72px rgba(0,0,0,0.62),
+    inset 0 0 0 1px rgba(95,145,255,0.10);
 }
 
 .card.qlyk h2 {
