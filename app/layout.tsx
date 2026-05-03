@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'arnaudcrestey.com — Hub',
+  title: 'arnaudcrestey.com',
   description:
     'Point d’entrée vers SYSTIA, Cabinet Astraé et Qlyk Studio Auto.',
   metadataBase: new URL('https://www.arnaudcrestey.com'),
