@@ -94,11 +94,13 @@ export default function Page() {
         </div>
 
         {/* CONTACT DISCRET PREMIUM */}
-        <div className="contact">
-          <p>Pour toute demande spécifique</p>
-          <a href="mailto:demande@arnaudcrestey.com">
-            demande@arnaudcrestey.com
-          </a>
+                <div className="contact">
+          <div className="contact-inner">
+            <p>Pour toute demande spécifique</p>
+            <a href="mailto:demande@arnaudcrestey.com">
+              demande@arnaudcrestey.com
+            </a>
+          </div>
         </div>
       </section>
     </main>
