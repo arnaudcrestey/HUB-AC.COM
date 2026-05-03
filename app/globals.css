@@ -272,11 +272,12 @@ a {
 }
 
 .card.qlyk:hover {
-  border-color: rgba(65,122,255,0.9);
+  border-color: rgba(65,122,255,0.75);
+
   box-shadow:
-    0 54px 115px rgba(0,0,0,0.78),
-    0 0 42px rgba(43,91,205,0.24),
-    inset 0 0 0 1px rgba(95,145,255,0.18);
+    0 48px 100px rgba(0,0,0,0.78),
+    0 0 28px rgba(43,91,205,0.16),
+    inset 0 0 0 1px rgba(95,145,255,0.14);
 }
 
 .card.qlyk h2 {
