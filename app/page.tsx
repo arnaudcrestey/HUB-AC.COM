@@ -15,7 +15,7 @@ const entities = [
     number: "01",
     name: "SYSTIA",
     description: "Structuration et conception de systèmes d’activité.",
-    href: "https://www.arnaudcrestey.com/",
+    href: "https://www.systia.fr/",
     className: "systia",
   },
   {
