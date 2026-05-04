@@ -47,8 +47,10 @@ export default function Page() {
             arnaudcrestey.com
           </div>
           <div className="line" />
-          <div className="baseline">
-            Développement et structuration d’entreprises
+
+          {/* BASELINE OPTIMISÉE RESPONSIVE */}
+          <div className="baseline max-w-[340px] text-center text-[13px] leading-[1.6] text-[#6b6257] sm:max-w-[420px] sm:text-[14px] md:max-w-[480px] md:text-[15px]">
+            Développer et structurer des activités à travers des systèmes numériques sur mesure.
           </div>
         </div>
 
@@ -94,7 +96,7 @@ export default function Page() {
         </div>
 
         {/* CONTACT DISCRET PREMIUM */}
-                      <div className="contact">
+        <div className="contact">
           <span>Demande spécifique</span>
           <a href="mailto:demande@arnaudcrestey.com">
             demande@arnaudcrestey.com
