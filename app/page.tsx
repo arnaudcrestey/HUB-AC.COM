@@ -49,9 +49,9 @@ export default function Page() {
           <div className="line" />
 
           {/* BASELINE OPTIMISÉE RESPONSIVE */}
-          <div className="baseline max-w-[340px] text-center text-[13px] leading-[1.6] text-[#6b6257] sm:max-w-[420px] sm:text-[14px] md:max-w-[480px] md:text-[15px]">
-            Développer et structurer des activités à travers des systèmes numériques sur mesure.
-          </div>
+          <div className="baseline max-w-[420px] mx-auto text-center text-[13px] leading-[1.6] text-[#6b6257] sm:text-[14px] md:text-[15px]">
+  Développer et structurer des activités à travers des systèmes numériques sur mesure.
+</div>
         </div>
 
         <div className="intro">
