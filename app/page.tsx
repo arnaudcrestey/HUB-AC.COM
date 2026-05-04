@@ -50,20 +50,20 @@ export default function Page() {
 
           {/* BASELINE OPTIMISÉE RESPONSIVE */}
           <div className="baseline max-w-[420px] mx-auto text-center text-[13px] leading-[1.6] text-[#6b6257] sm:text-[14px] md:text-[15px]">
-  Développer et structurer des activités à travers des systèmes numériques sur mesure.
+  Développer et structurer des activités à travers des systèmes numériques sur mesure
 </div>
         </div>
 
         <div className="intro">
           <h1 className={serif.className}>
-            Trois entités.
+            Trois entités
             <br />
-            Une même exigence.
+            Une même exigence
           </h1>
 
           <p>
             Un point d’entrée vers les structures développées sous
-            arnaudcrestey.com.
+            arnaudcrestey.com
           </p>
         </div>
 
