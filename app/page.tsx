@@ -39,7 +39,7 @@ const entities = [
     number: "04",
     name: "ARHI",
     description:
-      "Éclairer les recrutements grâce à une lecture structurée des compatibilités entre un candidat, un poste et un environnement.",
+      "Éclairer les recrutements grâce à une lecture structurée des compatibilités entre un candidat, un poste et une organisation.",
     href: "https://arhi.fr/",
     className: "arhi",
   },
