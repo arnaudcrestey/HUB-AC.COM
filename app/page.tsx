@@ -35,6 +35,14 @@ const entities = [
     href: "https://www.qlykstudio.fr/",
     className: "qlyk",
   },
+  {
+    number: "04",
+    name: "ARHI",
+    description:
+      "Mieux recruter grâce à une lecture structurée des compatibilités entre un candidat, un poste et la culture d'une organisation.",
+    href: "https://arhi.fr/",
+    className: "arhi",
+  },
 ];
 
 export default function Page() {
@@ -43,20 +51,22 @@ export default function Page() {
       <section className="frame">
         <div className="signature">
           <div className={`${serif.className} ac`}>AC</div>
+
           <div className={`${serif.className} domain`}>
             arnaudcrestey.com
           </div>
+
           <div className="line" />
 
-          {/* BASELINE OPTIMISÉE RESPONSIVE */}
           <div className="baseline max-w-[420px] mx-auto text-center text-[13px] leading-[1.6] text-[#6b6257] sm:text-[14px] md:text-[15px]">
-  Développer et structurer des activités à travers des systèmes numériques sur mesure
-</div>
+            Développer et structurer des activités à travers des systèmes
+            numériques sur mesure
+          </div>
         </div>
 
         <div className="intro">
           <h1 className={serif.className}>
-            Trois entités
+            Quatre entités
             <br />
             Une même exigence
           </h1>
@@ -80,7 +90,7 @@ export default function Page() {
 
               <h2
                 className={
-                  entity.className === "qlyk"
+                  entity.className === "qlyk" || entity.className === "arhi"
                     ? inter.className
                     : serif.className
                 }
@@ -95,9 +105,9 @@ export default function Page() {
           ))}
         </div>
 
-        {/* CONTACT DISCRET PREMIUM */}
         <div className="contact">
           <span>Demande spécifique</span>
+
           <a href="mailto:demande@arnaudcrestey.com">
             demande@arnaudcrestey.com
           </a>
