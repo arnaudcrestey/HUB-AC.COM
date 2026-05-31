@@ -319,33 +319,48 @@ a {
 }
 /* ARHI */
 
+/* ARHI */
+
 .card.arhi {
-  border: 1px solid rgba(194, 163, 98, 0.42);
+  border: 1px solid rgba(200, 169, 106, 0.5);
   background:
-    radial-gradient(circle at 85% 12%, rgba(218, 186, 117, 0.22), transparent 34%),
-    linear-gradient(145deg, #f8f4ea 0%, #f1eadb 58%, #e8dcc7 100%);
+    radial-gradient(circle at 50% 42%, rgba(200, 169, 106, 0.12), transparent 42%),
+    radial-gradient(circle at 90% 10%, rgba(200, 169, 106, 0.08), transparent 28%),
+    linear-gradient(145deg, #07111f 0%, #091728 48%, #0b1d31 100%);
+  color: #f5f4f1;
   box-shadow:
-    0 28px 60px rgba(125, 102, 61, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    0 30px 70px rgba(3, 10, 22, 0.56),
+    0 0 42px rgba(200, 169, 106, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .card.arhi:hover {
-  border-color: rgba(194, 163, 98, 0.65);
+  border-color: rgba(200, 169, 106, 0.78);
   box-shadow:
-    0 46px 94px rgba(125, 102, 61, 0.28),
-    0 0 40px rgba(214, 183, 113, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
-}
-
-.card.arhi h2 {
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 700;
+    0 42px 92px rgba(3, 10, 22, 0.7),
+    0 0 60px rgba(200, 169, 106, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .card.arhi .number {
-  color: rgba(90, 72, 45, 0.65);
+  color: rgba(200, 169, 106, 0.92);
+}
+
+.card.arhi h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.card.arhi p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.card.arhi .access {
+  color: #c8a96a;
+  opacity: 1;
 }
 
 /* RESPONSIVE */
