@@ -27,9 +27,9 @@ a {
   justify-content: center;
   position: relative;
   background:
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.92), transparent 34%),
-    radial-gradient(circle at 18% 16%, rgba(255,255,255,0.75), transparent 32%),
-    radial-gradient(circle at 82% 90%, rgba(152,126,82,0.2), transparent 44%),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.92), transparent 34%),
+    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.75), transparent 32%),
+    radial-gradient(circle at 82% 90%, rgba(152, 126, 82, 0.2), transparent 44%),
     linear-gradient(135deg, #f7f1e7 0%, #e8dfcf 48%, #d4c8b4 100%);
 }
 
@@ -38,28 +38,32 @@ a {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at center, transparent 54%, rgba(38,31,20,0.18) 100%);
+  background: radial-gradient(
+    circle at center,
+    transparent 54%,
+    rgba(38, 31, 20, 0.18) 100%
+  );
 }
 
 .frame {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1180px;
+  max-width: 1280px;
   min-height: 720px;
-  padding: 70px 68px 50px;
+  padding: 70px 60px 50px;
   border-radius: 38px;
-  border: 1px solid rgba(115,92,58,0.36);
+  border: 1px solid rgba(115, 92, 58, 0.36);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.96), transparent 38%),
-    radial-gradient(circle at 8% 100%, rgba(198,174,135,0.24), transparent 44%),
-    radial-gradient(circle at 95% 100%, rgba(122,99,65,0.16), transparent 48%),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.96), transparent 38%),
+    radial-gradient(circle at 8% 100%, rgba(198, 174, 135, 0.24), transparent 44%),
+    radial-gradient(circle at 95% 100%, rgba(122, 99, 65, 0.16), transparent 48%),
     linear-gradient(135deg, #fffdf8 0%, #f3eadc 34%, #e8dece 64%, #d9cbb6 100%);
   box-shadow:
-    0 90px 180px rgba(42,34,22,0.3),
-    0 34px 72px rgba(42,34,22,0.22),
-    inset 0 1px 0 rgba(255,255,255,0.92),
-    inset 0 -12px 28px rgba(93,74,47,0.1);
+    0 90px 180px rgba(42, 34, 22, 0.3),
+    0 34px 72px rgba(42, 34, 22, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    inset 0 -12px 28px rgba(93, 74, 47, 0.1);
   backdrop-filter: blur(18px);
 }
 
@@ -68,7 +72,7 @@ a {
   position: absolute;
   inset: 17px;
   border-radius: 30px;
-  border: 1px solid rgba(123,99,62,0.2);
+  border: 1px solid rgba(123, 99, 62, 0.2);
   pointer-events: none;
 }
 
@@ -96,13 +100,22 @@ a {
   width: 104px;
   height: 1px;
   margin: 24px auto 18px;
-  background: linear-gradient(90deg, transparent, rgba(133,103,53,0.78), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(133, 103, 53, 0.78),
+    transparent
+  );
 }
 
 .baseline {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.44em;
+  line-height: 1.7;
+  letter-spacing: 0.36em;
   text-transform: uppercase;
   color: #756348;
 }
@@ -131,19 +144,22 @@ a {
 .cards {
   margin-top: 76px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .card {
   min-height: 282px;
-  padding: 31px;
+  padding: 29px;
   border-radius: 28px;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  transition: transform 0.38s ease, box-shadow 0.38s ease, border-color 0.38s ease;
+  transition:
+    transform 0.38s ease,
+    box-shadow 0.38s ease,
+    border-color 0.38s ease;
 }
 
 .card:hover {
@@ -156,7 +172,7 @@ a {
   font-weight: 600;
   letter-spacing: 0.18em;
   margin-bottom: 18px;
-  color: rgba(40,40,40,0.56);
+  color: rgba(40, 40, 40, 0.56);
 }
 
 .card h2 {
@@ -215,38 +231,38 @@ a {
   border: 1px solid rgba(74, 99, 135, 0.28);
   background:
     radial-gradient(circle at 88% 12%, rgba(92, 123, 168, 0.16), transparent 34%),
-    radial-gradient(circle at 12% 90%, rgba(255,255,255,0.72), transparent 38%),
+    radial-gradient(circle at 12% 90%, rgba(255, 255, 255, 0.72), transparent 38%),
     linear-gradient(145deg, #f7f9fb 0%, #e8edf2 58%, #dfe6ec 100%);
   box-shadow:
-    0 28px 60px rgba(48,64,84,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.85);
+    0 28px 60px rgba(48, 64, 84, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .card.systia:hover {
   border-color: rgba(74, 99, 135, 0.42);
   box-shadow:
-    0 46px 96px rgba(48,64,84,0.28),
-    0 0 44px rgba(92,123,168,0.14),
-    inset 0 1px 0 rgba(255,255,255,0.92);
+    0 46px 96px rgba(48, 64, 84, 0.28),
+    0 0 44px rgba(92, 123, 168, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 /* ASTRAE */
 
 .card.astrae {
-  border: 1px solid rgba(178,130,105,0.38);
+  border: 1px solid rgba(178, 130, 105, 0.38);
   background:
-    radial-gradient(circle at 82% 10%, rgba(230,181,154,0.34), transparent 34%),
+    radial-gradient(circle at 82% 10%, rgba(230, 181, 154, 0.34), transparent 34%),
     linear-gradient(145deg, #f0ddd2 0%, #dec5b7 56%, #d1b5a4 100%);
   box-shadow:
-    0 30px 64px rgba(147,91,68,0.24),
-    inset 0 1px 0 rgba(255,255,255,0.62);
+    0 30px 64px rgba(147, 91, 68, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.62);
 }
 
 .card.astrae:hover {
-  border-color: rgba(178,130,105,0.55);
+  border-color: rgba(178, 130, 105, 0.55);
   box-shadow:
-    0 46px 94px rgba(147,91,68,0.35),
-    inset 0 1px 0 rgba(255,255,255,0.68);
+    0 46px 94px rgba(147, 91, 68, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68);
 }
 
 .card.astrae h2 {
@@ -256,38 +272,94 @@ a {
   line-height: 1.05;
 }
 
-/* QLYK — noir premium + bleu maîtrisé */
+/* QLYK */
+
+/* QLYK */
 
 .card.qlyk {
-  border: 1px solid rgba(43, 105, 255, 0.52);
+  border: 1px solid rgba(38, 96, 190, 0.55);
   background:
-    radial-gradient(circle at 92% 8%, rgba(43, 105, 255, 0.22), transparent 30%),
-    linear-gradient(145deg, #080808 0%, #020202 58%, #05070d 100%);
+    radial-gradient(circle at 50% 64%, rgba(28, 74, 168, 0.22), transparent 38%),
+    radial-gradient(circle at 92% 8%, rgba(47, 112, 255, 0.18), transparent 30%),
+    linear-gradient(145deg, #05070c 0%, #020305 55%, #07101d 100%);
   box-shadow:
-    0 28px 58px rgba(0,0,0,0.48),
-    inset 0 0 0 1px rgba(255,255,255,0.035);
-  color: #fff;
+    0 30px 70px rgba(0, 0, 0, 0.58),
+    0 0 42px rgba(32, 90, 210, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  color: #ffffff;
 }
 
 .card.qlyk:hover {
-  border-color: rgba(66, 122, 255, 0.72);
+  border-color: rgba(58, 124, 255, 0.78);
   box-shadow:
-    0 34px 70px rgba(0,0,0,0.58),
-    inset 0 0 0 1px rgba(95,145,255,0.12);
+    0 42px 92px rgba(0, 0, 0, 0.68),
+    0 0 58px rgba(47, 112, 255, 0.26),
+    inset 0 0 0 1px rgba(120, 165, 255, 0.14);
 }
 
 .card.qlyk h2 {
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-weight: 700;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card.qlyk p {
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .card.qlyk .number {
-  color: rgba(255,255,255,0.72);
+  color: rgba(91, 160, 255, 0.86);
 }
 
-/* MOBILE */
+.card.qlyk .access {
+  color: #5ba0ff;
+  opacity: 1;
+}
+/* ARHI */
+
+.card.arhi {
+  border: 1px solid rgba(194, 163, 98, 0.42);
+  background:
+    radial-gradient(circle at 85% 12%, rgba(218, 186, 117, 0.22), transparent 34%),
+    linear-gradient(145deg, #f8f4ea 0%, #f1eadb 58%, #e8dcc7 100%);
+  box-shadow:
+    0 28px 60px rgba(125, 102, 61, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.card.arhi:hover {
+  border-color: rgba(194, 163, 98, 0.65);
+  box-shadow:
+    0 46px 94px rgba(125, 102, 61, 0.28),
+    0 0 40px rgba(214, 183, 113, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.card.arhi h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.card.arhi .number {
+  color: rgba(90, 72, 45, 0.65);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1180px) {
+  .frame {
+    max-width: 980px;
+    padding: 64px 46px 46px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 @media (max-width: 900px) {
   .page {
@@ -316,10 +388,9 @@ a {
 
   .baseline {
     max-width: 270px;
-    margin: 0 auto;
     font-size: 9px;
     line-height: 1.7;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.24em;
   }
 
   .intro {
@@ -341,7 +412,7 @@ a {
 
   .cards {
     margin-top: 48px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
   }
 
@@ -368,22 +439,26 @@ a {
   .card.qlyk {
     border-color: rgba(43, 105, 255, 0.46);
     background:
-      radial-gradient(circle at 92% 8%, rgba(43,105,255,0.16), transparent 28%),
+      radial-gradient(circle at 92% 8%, rgba(43, 105, 255, 0.16), transparent 28%),
       linear-gradient(145deg, #080808 0%, #020202 62%, #05070d 100%);
     box-shadow:
-      0 16px 32px rgba(0,0,0,0.32),
-      inset 0 0 0 1px rgba(255,255,255,0.035);
+      0 16px 32px rgba(0, 0, 0, 0.32),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.035);
   }
 
   .card.qlyk:hover {
     transform: translateY(-6px);
     border-color: rgba(43, 105, 255, 0.46);
     box-shadow:
-      0 16px 32px rgba(0,0,0,0.32),
-      inset 0 0 0 1px rgba(255,255,255,0.035);
+      0 16px 32px rgba(0, 0, 0, 0.32),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.035);
   }
 
   .card.qlyk h2 {
+    font-size: 22px;
+  }
+
+  .card.arhi h2 {
     font-size: 22px;
   }
 
@@ -399,6 +474,12 @@ a {
     flex-direction: column;
     gap: 5px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -433,5 +514,3 @@ a {
     margin-top: 30px;
   }
 }
-
- 
