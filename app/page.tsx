@@ -21,14 +21,6 @@ const entities = [
   },
   {
     number: "02",
-    name: "Cabinet Astraé",
-    description:
-      "Une lecture du thème astral pour comprendre une situation en profondeur et retrouver de la clarté.",
-    href: "https://www.cabinet-astrae.fr/",
-    className: "astrae",
-  },
-  {
-    number: "03",
     name: "Qlyk Studio Auto",
     description:
       "Valoriser un véhicule avec des visuels premium conçus pour capter l’attention et déclencher l’achat.",
@@ -36,15 +28,22 @@ const entities = [
     className: "qlyk",
   },
   {
+    number: "03",
+    name: "Cabinet Astraé",
+    description:
+      "Une lecture du thème astral pour comprendre une situation en profondeur et retrouver de la clarté.",
+    href: "https://www.cabinet-astrae.fr/",
+    className: "astrae",
+  },
+  {
     number: "04",
     name: "ARHI",
     description:
-      "Mieux recruter grâce à une lecture structurée des compatibilités entre un candidat, un poste et la culture d'une organisation.",
+      "Éclairer les recrutements grâce à une lecture structurée des compatibilités entre un candidat, un poste et un environnement.",
     href: "https://arhi.fr/",
     className: "arhi",
   },
 ];
-
 export default function Page() {
   return (
     <main className={`${inter.className} page`}>
