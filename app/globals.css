@@ -133,10 +133,15 @@ a {
 }
 
 .signature-line {
-  width: 74px;
+  width: 84px;
   height: 1px;
-  margin: 16px auto 28px;
-  background: rgba(216, 189, 132, 0.55);
+  margin: 18px auto 28px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(216, 189, 132, 0.42),
+    transparent
+  );
 }
 
 .baseline {
@@ -396,12 +401,7 @@ a {
     font-size: 24px;
   }
 
-  .signature-line {
-    width: 74px;
-    height: 1px;
-    margin: 16px auto 28px;
-    background: rgba(216, 189, 132, 0.55);
-  }
+  
 
   .baseline {
     max-width: 900px;
