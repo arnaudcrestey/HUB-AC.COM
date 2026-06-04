@@ -64,15 +64,13 @@ export default function Page() {
         </section>
 
         <section className="method-block">
-          <p className="method-label">Méthode</p>
+          
 
           <h1 className={serif.className}>
             Comprendre avant d’agir.
           </h1>
 
-          <p>
-            Activité. Collaborations. Confiance.
-          </p>
+          
         </section>
 
         <section className="cards">
