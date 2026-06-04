@@ -398,6 +398,18 @@ a {
     font-size: 24px;
   }
 
+  .signature-line {
+    width: 90px;
+    height: 1px;
+    margin: 14px auto 28px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(216, 189, 132, 0.85),
+      transparent
+    );
+  }
+
   .cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
@@ -415,6 +427,8 @@ a {
     gap: 14px;
   }
 }
+
+
 
 @media (min-width: 1100px) {
   .frame {
