@@ -7,29 +7,29 @@ const serif = Cormorant_Garamond({
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const pillars = [
   {
     dimension: "Activité",
     name: "SYSTIA",
-    subtitle: "Comprendre l’activité",
-    text: "Structurer l’activité, clarifier l’offre et concevoir des systèmes numériques capables de soutenir le développement.",
+    subtitle: "Structurer l’activité",
+    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de soutenir le développement.",
     href: "https://www.systia.fr/",
   },
   {
     dimension: "Collaborations",
     name: "ARHI",
-    subtitle: "Comprendre les collaborations",
-    text: "Éclairer les recrutements, les compatibilités humaines et les dynamiques collectives qui influencent une organisation.",
+    subtitle: "Éclairer les collaborations",
+    text: "Lire les compatibilités humaines, les recrutements, les équipes et les dynamiques qui influencent une organisation.",
     href: "https://arhi.fr/",
   },
   {
     dimension: "Confiance",
     name: "UNYKO",
-    subtitle: "Comprendre la confiance",
-    text: "Mesurer les signaux qui rendent une organisation compréhensible, crédible et recommandable à l’ère de l’IA.",
+    subtitle: "Mesurer la confiance",
+    text: "Identifier les signaux qui rendent une organisation compréhensible, crédible et recommandable à l’ère de l’IA.",
     href: "https://unyko.arnaudcrestey.com/",
   },
 ];
@@ -64,7 +64,15 @@ export default function Page() {
         </section>
 
         <section className="method-block">
-          <p>Comprendre avant d’agir.</p>
+          <p className="method-label">Méthode</p>
+
+          <h1 className={serif.className}>
+            Comprendre avant d’agir.
+          </h1>
+
+          <p>
+            Activité. Collaborations. Confiance.
+          </p>
         </section>
 
         <section className="cards">
