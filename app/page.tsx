@@ -38,10 +38,10 @@ export default function Page() {
   return (
     <main className={`${inter.className} page`}>
       <section className="frame">
-        <div className="halo halo-one" />
-        <div className="halo halo-two" />
+        <div className="dark-arch" />
         <div className="circle circle-one" />
         <div className="circle circle-two" />
+        <div className="circle circle-three" />
 
         <header className="topbar">
           <span>Écosystème</span>
@@ -63,19 +63,8 @@ export default function Page() {
           </p>
         </section>
 
-        <section className="hero">
-          <p className="method">Comprendre avant d’agir</p>
-
-          <h1 className={serif.className}>
-            Une organisation.
-            <br />
-            Trois dimensions.
-          </h1>
-
-          <p className="intro">
-            Toute organisation repose sur son activité, ses collaborations
-            et la confiance qu’elle inspire.
-          </p>
+        <section className="method-block">
+          <p>Comprendre avant d’agir.</p>
         </section>
 
         <section className="cards">
@@ -88,13 +77,9 @@ export default function Page() {
               className="card"
             >
               <span className="dimension">{pillar.dimension}</span>
-
               <h2 className={serif.className}>{pillar.name}</h2>
-
               <span className="subtitle">{pillar.subtitle}</span>
-
               <p>{pillar.text}</p>
-
               <span className="access">Découvrir</span>
             </a>
           ))}
