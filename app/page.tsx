@@ -58,9 +58,12 @@ export default function Page() {
           <div className="signature-line" />
 
           <p className="baseline">
-            Développer et structurer les activités grâce à l’IA,
-            au service de l’humain.
-          </p>
+  Développer et structurer
+  <br />
+  les activités grâce à l’IA,
+  <br />
+  au service de l’humain.
+</p>
         </section>
 
         <section className="method-block">
