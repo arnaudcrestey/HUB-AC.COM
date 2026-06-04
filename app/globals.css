@@ -135,22 +135,17 @@ a {
 
 .signature-line {
   position: relative;
-  z-index: 999;
+  z-index: 30;
   display: block;
-  width: 110px;
+  width: 90px;
   height: 1px;
-  margin: 16px auto 30px;
-  background: #d8bd84;
-  opacity: 1;
-}
-.signature-line::after {
-  content: "";
-  display: block;
-  width: 44px;
-  height: 1px;
-  margin: 0 auto;
-  background: #f7ead4;
-  opacity: 0.55;
+  margin: 14px auto 28px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(216, 189, 132, 0.85),
+    transparent
+  );
 }
 .baseline {
   max-width: 900px;
