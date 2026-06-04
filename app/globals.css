@@ -145,12 +145,10 @@ a {
 }
 
 .signature-line {
-  width: 120px;
-  height: 2px;
-  margin: 22px auto;
-  background: #d8bd84;
-  position: relative;
-  z-index: 20;
+  width: 90px;
+  height: 1px;
+  margin: 18px auto 18px;
+  background: rgba(216, 189, 132, 0.45);
 }
 
 .baseline {
