@@ -161,7 +161,7 @@ a {
 
 .method-block {
   max-width: 980px;
-  margin: 58px auto 0;
+  margin: 66px auto 0;
   text-align: center;
 }
 
@@ -177,7 +177,7 @@ a {
 .cards {
   width: 100%;
   max-width: 1110px;
-  margin: 90px auto 0;
+  margin: 110px auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -427,7 +427,7 @@ a {
   }
 
   .cards {
-    margin-top: 100px;
+    margin-top: 115px;
   }
 }
 
