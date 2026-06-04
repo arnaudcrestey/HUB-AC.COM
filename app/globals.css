@@ -36,7 +36,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  min-height: calc(100svh - 28px);
+  min-height: auto;
   padding: 26px 18px 32px;
   overflow: hidden;
   border-radius: 34px;
@@ -145,26 +145,21 @@ a {
 }
 
 .signature-line {
+  width: 120px;
+  height: 2px;
+  margin: 22px auto;
+  background: #d8bd84;
   position: relative;
-  z-index: 10;
-  width: 92px;
-  height: 1px;
-  margin: 24px auto 18px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(216, 189, 132, 0.9),
-    transparent
-  );
+  z-index: 20;
 }
 
 .baseline {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  font-size: 10px;
-  font-weight: 850;
+  font-size: 13px;
+  font-weight: 900;
   line-height: 1.85;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: rgba(243, 226, 188, 0.92);
 }
@@ -422,7 +417,7 @@ a {
   }
 
   .frame {
-    min-height: calc(100svh - 56px);
+    min-height: auto;
     padding: 36px 34px 42px;
     border-radius: 38px;
   }
@@ -541,9 +536,9 @@ a {
   }
 
   .method-block h1 {
-    font-size: clamp(34px, 12vw, 52px);
-    line-height: 0.98;
-  }
+  font-size: 34px;
+  line-height: 0.78;
+}
 
   .method-block p {
     max-width: 310px;
