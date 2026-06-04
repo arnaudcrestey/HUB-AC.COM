@@ -386,6 +386,12 @@ a {
     border-radius: 30px;
   }
 
+  .dark-arch {
+    top: -270px;
+    width: 1220px;
+    height: 780px;
+  }
+
   .signature {
     margin-top: 56px;
   }
@@ -398,12 +404,6 @@ a {
     font-size: 24px;
   }
 
- .signature-line {
-  width: 90px;
-  height: 1px;
-  margin: 20px auto 34px;
-  background: rgba(216, 189, 132, 1);
-}
   .cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
