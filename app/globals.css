@@ -398,18 +398,11 @@ a {
     font-size: 24px;
   }
 
-  .signature-line {
+ .signature-line {
   width: 90px;
   height: 1px;
-  margin: 14px auto 28px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(247, 234, 212, 0.18) 18%,
-    rgba(216, 189, 132, 0.95) 50%,
-    rgba(247, 234, 212, 0.18) 82%,
-    transparent 100%
-  );
+  margin: 20px auto 34px;
+  background: rgba(216, 189, 132, 1);
 }
   .cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
