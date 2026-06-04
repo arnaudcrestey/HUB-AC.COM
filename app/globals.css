@@ -10,7 +10,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background: #05070a;
+  background: #030609;
 }
 
 a {
@@ -20,35 +20,34 @@ a {
 
 .page {
   min-height: 100svh;
-  padding: 18px;
-  color: #18130d;
+  padding: 14px;
+  color: #17120c;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.13), transparent 30rem),
-    radial-gradient(circle at 50% 55%, rgba(255, 255, 255, 0.04), transparent 38rem),
-    linear-gradient(180deg, #05080c 0%, #020304 100%);
+    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.16), transparent 30rem),
+    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.04), transparent 38rem),
+    linear-gradient(180deg, #05090d 0%, #020304 100%);
 }
 
 .frame {
   position: relative;
   width: 100%;
-  max-width: 1380px;
-  min-height: calc(100svh - 36px);
-  padding: 28px 18px 34px;
+  max-width: 1420px;
+  min-height: calc(100svh - 28px);
+  padding: 26px 18px 32px;
   overflow: hidden;
   border-radius: 34px;
-  border: 1px solid rgba(216, 189, 132, 0.3);
+  border: 1px solid rgba(216, 189, 132, 0.34);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.92), transparent 30rem),
-    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.52), transparent 28rem),
-    radial-gradient(circle at 84% 90%, rgba(130, 105, 62, 0.18), transparent 34rem),
-    linear-gradient(135deg, #fffaf0 0%, #f2e8d8 46%, #dfd1bb 100%);
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.86), transparent 28rem),
+    radial-gradient(circle at 50% 62%, rgba(116, 91, 50, 0.16), transparent 40rem),
+    linear-gradient(135deg, #fffaf0 0%, #f0e5d4 46%, #d9c9af 100%);
   box-shadow:
-    0 80px 180px rgba(0, 0, 0, 0.62),
-    0 34px 90px rgba(0, 0, 0, 0.42),
+    0 90px 200px rgba(0, 0, 0, 0.68),
+    0 34px 90px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
@@ -56,25 +55,43 @@ a {
   content: "";
   position: absolute;
   inset: 13px;
+  z-index: 5;
   border-radius: 25px;
   border: 1px solid rgba(113, 88, 52, 0.22);
   pointer-events: none;
-  z-index: 4;
 }
 
 .frame::after {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 50% 50%, transparent 58%, rgba(40, 30, 18, 0.16) 100%);
-  pointer-events: none;
   z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 56%, rgba(33, 24, 14, 0.18) 100%);
+}
+
+.dark-arch {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: -22%;
+  width: 1180px;
+  height: 760px;
+  transform: translateX(-50%);
+  border-radius: 0 0 999px 999px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(216, 189, 132, 0.18), transparent 18rem),
+    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.05), transparent 30rem),
+    linear-gradient(180deg, #071019 0%, #030609 72%, rgba(3, 6, 9, 0.12) 100%);
+  box-shadow:
+    0 40px 140px rgba(0, 0, 0, 0.5),
+    inset 0 -1px 0 rgba(216, 189, 132, 0.22);
 }
 
 .topbar {
   position: relative;
-  z-index: 5;
+  z-index: 6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +99,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.36em;
   text-transform: uppercase;
-  color: rgba(118, 91, 48, 0.82);
+  color: rgba(199, 166, 101, 0.9);
 }
 
 .topbar a {
@@ -90,12 +107,12 @@ a {
 }
 
 .topbar a:hover {
-  opacity: 0.65;
+  opacity: 0.66;
 }
 
 .signature {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   margin-top: 46px;
   text-align: center;
 }
@@ -104,7 +121,8 @@ a {
   font-size: 58px;
   line-height: 0.78;
   letter-spacing: -0.16em;
-  color: #15100b;
+  color: #f7ead4;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, 0.36);
   transform: translateX(-4px);
 }
 
@@ -112,7 +130,8 @@ a {
   margin-top: 14px;
   font-size: 28px;
   letter-spacing: -0.045em;
-  color: #19120c;
+  color: #d8bd84;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
 }
 
 .signature-line {
@@ -122,78 +141,61 @@ a {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(133, 103, 53, 0.78),
+    rgba(216, 189, 132, 0.88),
     transparent
   );
 }
 
 .baseline {
-  max-width: 560px;
+  max-width: 600px;
   margin: 0 auto;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.85;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #746145;
+  color: rgba(243, 226, 188, 0.9);
 }
 
-.hero {
+.method-block {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   max-width: 920px;
-  margin: 62px auto 0;
+  margin: 70px auto 0;
   text-align: center;
 }
 
-.method {
-  margin: 0 0 22px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: #8a6b35;
-}
-
-.hero h1 {
+.method-block p {
   margin: 0;
-  font-size: clamp(48px, 9vw, 102px);
+  font-size: clamp(54px, 9vw, 116px);
   line-height: 0.9;
-  letter-spacing: -0.066em;
+  letter-spacing: -0.07em;
   font-weight: 500;
-  color: #15100b;
-}
-
-.intro {
-  max-width: 610px;
-  margin: 30px auto 0;
-  font-size: 15px;
-  line-height: 1.8;
-  color: rgba(47, 39, 28, 0.72);
+  color: #17110b;
 }
 
 .cards {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   max-width: 1080px;
-  margin: 64px auto 0;
+  margin: 70px auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
 .card {
-  min-height: 270px;
-  padding: 28px;
+  min-height: 300px;
+  padding: 30px;
   border-radius: 26px;
-  border: 1px solid rgba(113, 88, 52, 0.22);
+  border: 1px solid rgba(113, 88, 52, 0.24);
   background:
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.72), transparent 16rem),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.58), rgba(232, 221, 204, 0.72));
+    linear-gradient(145deg, rgba(255, 255, 255, 0.66), rgba(232, 221, 204, 0.78));
   box-shadow:
-    0 28px 70px rgba(58, 44, 25, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+    0 30px 80px rgba(58, 44, 25, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
   display: flex;
   flex-direction: column;
   transition:
@@ -204,24 +206,24 @@ a {
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: rgba(133, 103, 53, 0.45);
+  border-color: rgba(133, 103, 53, 0.48);
   box-shadow:
-    0 42px 96px rgba(58, 44, 25, 0.28),
-    0 0 46px rgba(216, 189, 132, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    0 44px 104px rgba(58, 44, 25, 0.3),
+    0 0 46px rgba(216, 189, 132, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
 }
 
 .dimension {
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: rgba(122, 93, 46, 0.86);
+  color: rgba(122, 93, 46, 0.9);
 }
 
 .card h2 {
-  margin: 34px 0 0;
-  font-size: 48px;
+  margin: 38px 0 0;
+  font-size: 52px;
   line-height: 0.95;
   letter-spacing: -0.035em;
   font-weight: 500;
@@ -229,17 +231,18 @@ a {
 }
 
 .subtitle {
-  margin-top: 12px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.22em;
+  margin-top: 14px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  line-height: 1.5;
   text-transform: uppercase;
-  color: rgba(122, 93, 46, 0.72);
+  color: rgba(122, 93, 46, 0.74);
 }
 
 .card p {
   max-width: 330px;
-  margin: 22px 0 34px;
+  margin: 24px 0 36px;
   font-size: 14px;
   line-height: 1.72;
   color: rgba(38, 31, 22, 0.72);
@@ -248,7 +251,7 @@ a {
 .access {
   margin-top: auto;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: #856735;
@@ -256,14 +259,14 @@ a {
 
 .ecosystem-note {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   margin: 44px auto 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-align: center;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   color: rgba(122, 93, 46, 0.62);
@@ -271,7 +274,7 @@ a {
 
 .proofs {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   max-width: 760px;
   margin: 34px auto 0;
   padding-top: 28px;
@@ -282,7 +285,7 @@ a {
 .proofs p {
   margin: 0 0 16px;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: rgba(73, 61, 45, 0.42);
@@ -306,7 +309,7 @@ a {
 
 .contact {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   max-width: 760px;
   margin: 34px auto 0;
   padding-top: 22px;
@@ -328,53 +331,30 @@ a {
   font-weight: 700;
 }
 
-.halo,
 .circle {
   position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 18%;
+  border-radius: 999px;
+  border: 1px solid rgba(216, 189, 132, 0.12);
+  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
-.halo-one {
-  z-index: 0;
-  width: 900px;
-  height: 900px;
-  left: 50%;
-  top: -260px;
-  transform: translateX(-50%);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, rgba(5, 8, 12, 0.14), transparent 62%);
-}
-
-.halo-two {
-  z-index: 0;
-  width: 980px;
-  height: 520px;
-  left: 50%;
-  bottom: -240px;
-  transform: translateX(-50%);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, rgba(5, 8, 12, 0.12), transparent 66%);
-}
-
-.circle {
-  z-index: 0;
-  left: 50%;
-  top: 22%;
-  border-radius: 999px;
-  border: 1px solid rgba(122, 93, 46, 0.11);
-  transform: translate(-50%, -50%);
-}
-
 .circle-one {
-  width: 880px;
-  height: 880px;
+  width: 960px;
+  height: 960px;
 }
 
 .circle-two {
-  width: 470px;
-  height: 470px;
+  width: 520px;
+  height: 520px;
+}
+
+.circle-three {
+  width: 190px;
+  height: 190px;
 }
 
 @media (min-width: 760px) {
@@ -428,23 +408,18 @@ a {
     padding: 40px 56px 48px;
   }
 
-  .hero {
-    margin-top: 68px;
+  .method-block {
+    margin-top: 76px;
   }
 
   .cards {
-    margin-top: 72px;
-  }
-
-  .card {
-    min-height: 292px;
-    padding: 32px;
+    margin-top: 76px;
   }
 }
 
 @media (max-width: 520px) {
   .page {
-    padding: 12px;
+    padding: 10px;
   }
 
   .frame {
@@ -456,6 +431,12 @@ a {
   .frame::before {
     inset: 10px;
     border-radius: 21px;
+  }
+
+  .dark-arch {
+    top: -120px;
+    width: 760px;
+    height: 520px;
   }
 
   .topbar {
@@ -489,31 +470,20 @@ a {
     letter-spacing: 0.23em;
   }
 
-  .hero {
-    margin-top: 48px;
+  .method-block {
+    margin-top: 58px;
   }
 
-  .method {
-    font-size: 9px;
-    line-height: 1.7;
-    letter-spacing: 0.26em;
-  }
-
-  .hero h1 {
-    font-size: clamp(42px, 14vw, 60px);
-  }
-
-  .intro {
-    max-width: 320px;
-    font-size: 13px;
+  .method-block p {
+    font-size: clamp(46px, 15vw, 64px);
   }
 
   .cards {
-    margin-top: 46px;
+    margin-top: 48px;
   }
 
   .card {
-    min-height: 230px;
+    min-height: 238px;
     padding: 24px;
     border-radius: 22px;
   }
@@ -528,12 +498,17 @@ a {
   }
 
   .circle-one {
-    width: 680px;
-    height: 680px;
+    width: 700px;
+    height: 700px;
   }
 
   .circle-two {
-    width: 360px;
-    height: 360px;
+    width: 380px;
+    height: 380px;
+  }
+
+  .circle-three {
+    width: 140px;
+    height: 140px;
   }
 }
