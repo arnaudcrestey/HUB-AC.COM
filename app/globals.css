@@ -126,7 +126,7 @@ a {
 
 .domain {
   margin-top: 6px;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: -0.045em;
   color: #f7ead4;
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
@@ -394,7 +394,7 @@ a {
   }
 
   .ac {
-    font-size: 64px;
+    font-size: 82px;
   }
 
   .domain {
@@ -404,11 +404,12 @@ a {
   
 
   .baseline {
-    max-width: 900px;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.22em;
-  }
+  max-width: 900px;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.22em;
+}
 
   .method-block {
     margin-top: 66px;
