@@ -1,4 +1,4 @@
-mport { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
