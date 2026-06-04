@@ -44,9 +44,8 @@ export default function Page() {
         <div className="circle circle-three" />
 
         <header className="topbar">
-          <span>Écosystème</span>
-          <a href="mailto:demande@arnaudcrestey.com">Contact</a>
-        </header>
+  <span>Écosystème</span>
+</header>
 
         <section className="signature">
           <div className={`${serif.className} ac`}>AC</div>
@@ -60,7 +59,7 @@ export default function Page() {
           <p className="baseline">
   Développer et structurer les activités
   <br />
-  grâce à l’IA, au service de l'humain.
+  grâce à l’IA, au service de l’humain.
  
 </p>
         </section>
