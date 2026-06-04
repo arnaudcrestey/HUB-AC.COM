@@ -54,8 +54,6 @@ export default function Page() {
             arnaudcrestey.com
           </div>
 
-         
-
           <p className="baseline">
             Développer et structurer les activités
             <br />
