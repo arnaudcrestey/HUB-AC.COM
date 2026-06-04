@@ -27,24 +27,24 @@ a {
   justify-content: center;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.16), transparent 30rem),
-    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.04), transparent 38rem),
+    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.16), transparent 32rem),
+    radial-gradient(circle at 50% 54%, rgba(255, 255, 255, 0.04), transparent 42rem),
     linear-gradient(180deg, #05090d 0%, #020304 100%);
 }
 
 .frame {
   position: relative;
   width: 100%;
-  max-width: 1420px;
+  max-width: 1440px;
   min-height: calc(100svh - 28px);
   padding: 26px 18px 32px;
   overflow: hidden;
   border-radius: 34px;
   border: 1px solid rgba(216, 189, 132, 0.34);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.86), transparent 28rem),
-    radial-gradient(circle at 50% 62%, rgba(116, 91, 50, 0.16), transparent 40rem),
-    linear-gradient(135deg, #fffaf0 0%, #f0e5d4 46%, #d9c9af 100%);
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.9), transparent 30rem),
+    radial-gradient(circle at 50% 60%, rgba(116, 91, 50, 0.13), transparent 42rem),
+    linear-gradient(135deg, #fffaf0 0%, #f1e6d5 48%, #d9c9af 100%);
   box-shadow:
     0 90px 200px rgba(0, 0, 0, 0.68),
     0 34px 90px rgba(0, 0, 0, 0.45),
@@ -55,9 +55,9 @@ a {
   content: "";
   position: absolute;
   inset: 13px;
-  z-index: 5;
+  z-index: 8;
   border-radius: 25px;
-  border: 1px solid rgba(113, 88, 52, 0.22);
+  border: 1px solid rgba(113, 88, 52, 0.2);
   pointer-events: none;
 }
 
@@ -68,41 +68,49 @@ a {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% 50%, transparent 56%, rgba(33, 24, 14, 0.18) 100%);
+    linear-gradient(180deg, rgba(3, 6, 9, 0.18) 0%, transparent 32%, transparent 76%, rgba(40, 28, 15, 0.14) 100%),
+    radial-gradient(circle at 50% 50%, transparent 58%, rgba(33, 24, 14, 0.16) 100%);
 }
 
 .dark-arch {
   position: absolute;
   z-index: 0;
   left: 50%;
-  top: -22%;
-  width: 1180px;
-  height: 760px;
+  top: -25%;
+  width: 1220px;
+  height: 790px;
   transform: translateX(-50%);
   border-radius: 0 0 999px 999px;
   background:
-    radial-gradient(circle at 50% 18%, rgba(216, 189, 132, 0.18), transparent 18rem),
-    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.05), transparent 30rem),
-    linear-gradient(180deg, #071019 0%, #030609 72%, rgba(3, 6, 9, 0.12) 100%);
+    radial-gradient(circle at 50% 18%, rgba(216, 189, 132, 0.22), transparent 18rem),
+    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.07), transparent 32rem),
+    linear-gradient(180deg, #071019 0%, #030609 70%, rgba(3, 6, 9, 0) 100%);
   box-shadow:
-    0 40px 140px rgba(0, 0, 0, 0.5),
-    inset 0 -1px 0 rgba(216, 189, 132, 0.22);
+    0 46px 150px rgba(0, 0, 0, 0.48),
+    inset 0 -1px 0 rgba(216, 189, 132, 0.18);
 }
 
 .topbar {
   position: relative;
-  z-index: 6;
-  display: flex;
-  justify-content: space-between;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.36em;
   text-transform: uppercase;
-  color: rgba(199, 166, 101, 0.9);
+  color: rgba(199, 166, 101, 0.92);
+}
+
+.topbar span {
+  grid-column: 2;
+  text-align: center;
 }
 
 .topbar a {
+  grid-column: 3;
+  justify-self: end;
   transition: opacity 0.25s ease;
 }
 
@@ -112,7 +120,7 @@ a {
 
 .signature {
   position: relative;
-  z-index: 4;
+  z-index: 9;
   margin-top: 46px;
   text-align: center;
 }
@@ -127,6 +135,8 @@ a {
 }
 
 .domain {
+  position: relative;
+  z-index: 10;
   margin-top: 14px;
   font-size: 28px;
   letter-spacing: -0.045em;
@@ -135,123 +145,172 @@ a {
 }
 
 .signature-line {
+  position: relative;
+  z-index: 10;
   width: 92px;
   height: 1px;
   margin: 24px auto 18px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(216, 189, 132, 0.88),
+    rgba(216, 189, 132, 0.9),
     transparent
   );
 }
 
 .baseline {
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 850;
   line-height: 1.85;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(243, 226, 188, 0.9);
+  color: rgba(243, 226, 188, 0.92);
 }
 
 .method-block {
   position: relative;
-  z-index: 4;
-  max-width: 920px;
-  margin: 70px auto 0;
+  z-index: 6;
+  max-width: 980px;
+  margin: 58px auto 0;
   text-align: center;
 }
 
-.method-block p {
+.method-label {
+  margin: 0 0 18px;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: rgba(122, 93, 46, 0.55);
+}
+
+.method-block h1 {
   margin: 0;
-  font-size: clamp(54px, 9vw, 116px);
-  line-height: 0.9;
-  letter-spacing: -0.07em;
+  font-size: clamp(36px, 6.2vw, 82px);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
   font-weight: 500;
   color: #17110b;
 }
 
+.method-block p {
+  max-width: 760px;
+  margin: 22px auto 0;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.9;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(63, 48, 28, 0.62);
+}
+
 .cards {
   position: relative;
-  z-index: 4;
+  z-index: 6;
   width: 100%;
-  max-width: 1080px;
-  margin: 70px auto 0;
+  max-width: 1110px;
+  margin: 66px auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
 .card {
-  min-height: 300px;
-  padding: 30px;
-  border-radius: 26px;
-  border: 1px solid rgba(113, 88, 52, 0.24);
+  position: relative;
+  min-height: 330px;
+  padding: 34px 30px 30px;
+  border-radius: 18px 18px 30px 30px;
+  border: 1px solid rgba(113, 88, 52, 0.25);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.72), transparent 16rem),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.66), rgba(232, 221, 204, 0.78));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(238, 228, 211, 0.88)),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.62), rgba(232, 221, 204, 0.84));
   box-shadow:
-    0 30px 80px rgba(58, 44, 25, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    0 34px 90px rgba(58, 44, 25, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.84);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   transition:
     transform 0.34s ease,
     border-color 0.34s ease,
     box-shadow 0.34s ease;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(133, 103, 53, 0.58),
+    transparent
+  );
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-right: 1px solid rgba(133, 103, 53, 0.22);
+  border-bottom: 1px solid rgba(133, 103, 53, 0.22);
+  pointer-events: none;
+}
+
 .card:hover {
   transform: translateY(-8px);
-  border-color: rgba(133, 103, 53, 0.48);
+  border-color: rgba(133, 103, 53, 0.5);
   box-shadow:
-    0 44px 104px rgba(58, 44, 25, 0.3),
-    0 0 46px rgba(216, 189, 132, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+    0 48px 110px rgba(58, 44, 25, 0.3),
+    0 0 48px rgba(216, 189, 132, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .dimension {
   font-size: 10px;
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   color: rgba(122, 93, 46, 0.9);
 }
 
 .card h2 {
-  margin: 38px 0 0;
-  font-size: 52px;
-  line-height: 0.95;
-  letter-spacing: -0.035em;
+  margin: 42px 0 0;
+  font-size: 56px;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
   font-weight: 500;
   color: #17110b;
 }
 
 .subtitle {
-  margin-top: 14px;
+  margin-top: 16px;
   font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.24em;
+  font-weight: 950;
+  letter-spacing: 0.22em;
   line-height: 1.5;
   text-transform: uppercase;
-  color: rgba(122, 93, 46, 0.74);
+  color: rgba(122, 93, 46, 0.76);
 }
 
 .card p {
-  max-width: 330px;
-  margin: 24px 0 36px;
+  max-width: 335px;
+  margin: 26px 0 38px;
   font-size: 14px;
-  line-height: 1.72;
+  line-height: 1.75;
   color: rgba(38, 31, 22, 0.72);
 }
 
 .access {
   margin-top: auto;
   font-size: 10px;
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: #856735;
@@ -259,14 +318,14 @@ a {
 
 .ecosystem-note {
   position: relative;
-  z-index: 4;
-  margin: 44px auto 0;
+  z-index: 6;
+  margin: 46px auto 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-align: center;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   color: rgba(122, 93, 46, 0.62);
@@ -274,7 +333,7 @@ a {
 
 .proofs {
   position: relative;
-  z-index: 4;
+  z-index: 6;
   max-width: 760px;
   margin: 34px auto 0;
   padding-top: 28px;
@@ -285,7 +344,7 @@ a {
 .proofs p {
   margin: 0 0 16px;
   font-size: 9px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: rgba(73, 61, 45, 0.42);
@@ -309,7 +368,7 @@ a {
 
 .contact {
   position: relative;
-  z-index: 4;
+  z-index: 6;
   max-width: 760px;
   margin: 34px auto 0;
   padding-top: 22px;
@@ -328,7 +387,7 @@ a {
 
 .contact a {
   color: rgba(34, 27, 20, 0.78);
-  font-weight: 700;
+  font-weight: 750;
 }
 
 .circle {
@@ -343,13 +402,13 @@ a {
 }
 
 .circle-one {
-  width: 960px;
-  height: 960px;
+  width: 980px;
+  height: 980px;
 }
 
 .circle-two {
-  width: 520px;
-  height: 520px;
+  width: 540px;
+  height: 540px;
 }
 
 .circle-three {
@@ -409,11 +468,11 @@ a {
   }
 
   .method-block {
-    margin-top: 76px;
+    margin-top: 64px;
   }
 
   .cards {
-    margin-top: 76px;
+    margin-top: 72px;
   }
 }
 
@@ -434,12 +493,13 @@ a {
   }
 
   .dark-arch {
-    top: -120px;
+    top: -122px;
     width: 760px;
     height: 520px;
   }
 
   .topbar {
+    display: flex;
     justify-content: center;
   }
 
@@ -464,31 +524,47 @@ a {
   }
 
   .baseline {
-    max-width: 300px;
+    max-width: 310px;
     font-size: 8.5px;
     line-height: 1.8;
     letter-spacing: 0.23em;
   }
 
   .method-block {
-    margin-top: 58px;
+    margin-top: 50px;
+  }
+
+  .method-label {
+    margin-bottom: 14px;
+    font-size: 8px;
+    letter-spacing: 0.34em;
+  }
+
+  .method-block h1 {
+    font-size: clamp(34px, 12vw, 52px);
+    line-height: 0.98;
   }
 
   .method-block p {
-    font-size: clamp(46px, 15vw, 64px);
+    max-width: 310px;
+    margin-top: 18px;
+    font-size: 9px;
+    line-height: 1.85;
+    letter-spacing: 0.2em;
   }
 
   .cards {
-    margin-top: 48px;
+    margin-top: 44px;
   }
 
   .card {
-    min-height: 238px;
-    padding: 24px;
-    border-radius: 22px;
+    min-height: 260px;
+    padding: 26px 24px;
+    border-radius: 16px 16px 24px 24px;
   }
 
   .card h2 {
+    margin-top: 34px;
     font-size: 42px;
   }
 
