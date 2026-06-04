@@ -27,8 +27,8 @@ a {
   justify-content: center;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.16), transparent 32rem),
-    radial-gradient(circle at 50% 54%, rgba(255, 255, 255, 0.04), transparent 42rem),
+    radial-gradient(circle at 50% 0%, rgba(216, 189, 132, 0.16), transparent 34rem),
+    radial-gradient(circle at 50% 54%, rgba(255, 255, 255, 0.04), transparent 44rem),
     linear-gradient(180deg, #05090d 0%, #020304 100%);
 }
 
@@ -40,11 +40,11 @@ a {
   padding: 26px 18px 32px;
   overflow: hidden;
   border-radius: 34px;
-  border: 1px solid rgba(216, 189, 132, 0.34);
+  border: 1px solid rgba(216, 189, 132, 0.36);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.9), transparent 30rem),
-    radial-gradient(circle at 50% 60%, rgba(116, 91, 50, 0.13), transparent 42rem),
-    linear-gradient(135deg, #fffaf0 0%, #f1e6d5 48%, #d9c9af 100%);
+    radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.92), transparent 31rem),
+    radial-gradient(circle at 50% 63%, rgba(116, 91, 50, 0.12), transparent 44rem),
+    linear-gradient(135deg, #fffaf0 0%, #f1e6d5 48%, #d7c6ab 100%);
   box-shadow:
     0 90px 200px rgba(0, 0, 0, 0.68),
     0 34px 90px rgba(0, 0, 0, 0.45),
@@ -68,17 +68,17 @@ a {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(3, 6, 9, 0.18) 0%, transparent 32%, transparent 76%, rgba(40, 28, 15, 0.14) 100%),
-    radial-gradient(circle at 50% 50%, transparent 58%, rgba(33, 24, 14, 0.16) 100%);
+    linear-gradient(180deg, rgba(3, 6, 9, 0.14) 0%, transparent 34%, transparent 76%, rgba(40, 28, 15, 0.13) 100%),
+    radial-gradient(circle at 50% 50%, transparent 58%, rgba(33, 24, 14, 0.14) 100%);
 }
 
 .dark-arch {
   position: absolute;
   z-index: 0;
   left: 50%;
-  top: -25%;
-  width: 1220px;
-  height: 790px;
+  top: -122px;
+  width: 760px;
+  height: 520px;
   transform: translateX(-50%);
   border-radius: 0 0 999px 999px;
   background:
@@ -112,12 +112,12 @@ a {
 }
 
 .signature {
-  margin-top: 46px;
+  margin-top: 38px;
   text-align: center;
 }
 
 .ac {
-  font-size: 62px;
+  font-size: 54px;
   line-height: 0.78;
   letter-spacing: -0.16em;
   color: #f7ead4;
@@ -127,11 +127,12 @@ a {
 
 .domain {
   margin-top: 6px;
-  font-size: 23px;
+  font-size: 24px;
   letter-spacing: -0.045em;
   color: #f7ead4;
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
 }
+
 .signature-line {
   position: relative;
   z-index: 40;
@@ -147,27 +148,28 @@ a {
   );
   box-shadow: 0 0 14px rgba(216, 189, 132, 0.28);
 }
+
 .baseline {
-  max-width: 900px;
+  max-width: 340px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 900;
   line-height: 1.8;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(243, 226, 188, 0.98);
 }
 
 .method-block {
   max-width: 980px;
-  margin: 66px auto 0;
+  margin: 50px auto 0;
   text-align: center;
 }
 
 .method-block h1 {
   margin: 0;
-  font-size: clamp(30px, 4.2vw, 52px);
-  line-height: 0.96;
+  font-size: 34px;
+  line-height: 0.82;
   letter-spacing: -0.055em;
   font-weight: 500;
   color: #17110b;
@@ -176,7 +178,7 @@ a {
 .cards {
   width: 100%;
   max-width: 1110px;
-  margin: 110px auto 0;
+  margin: 58px auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -184,13 +186,13 @@ a {
 
 .card {
   position: relative;
-  min-height: 330px;
-  padding: 34px 30px 30px;
-  border-radius: 18px 18px 30px 30px;
+  min-height: 260px;
+  padding: 26px 24px;
+  border-radius: 16px 16px 24px 24px;
   border: 1px solid rgba(113, 88, 52, 0.25);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(238, 228, 211, 0.88)),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.62), rgba(232, 221, 204, 0.84));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(238, 228, 211, 0.9)),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.64), rgba(232, 221, 204, 0.86));
   box-shadow:
     0 34px 90px rgba(58, 44, 25, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.84);
@@ -246,8 +248,8 @@ a {
 }
 
 .card h2 {
-  margin: 42px 0 0;
-  font-size: 56px;
+  margin: 34px 0 0;
+  font-size: 42px;
   line-height: 0.92;
   letter-spacing: -0.04em;
   font-weight: 500;
@@ -267,8 +269,8 @@ a {
 .card p {
   max-width: 335px;
   margin: 26px 0 38px;
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 13px;
+  line-height: 1.7;
   color: rgba(38, 31, 22, 0.72);
 }
 
@@ -351,24 +353,24 @@ a {
   left: 50%;
   top: 18%;
   border-radius: 999px;
-  border: 1px solid rgba(216, 189, 132, 0.12);
+  border: 1px solid rgba(216, 189, 132, 0.16);
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
 .circle-one {
-  width: 980px;
-  height: 980px;
+  width: 700px;
+  height: 700px;
 }
 
 .circle-two {
-  width: 540px;
-  height: 540px;
+  width: 380px;
+  height: 380px;
 }
 
 .circle-three {
-  width: 190px;
-  height: 190px;
+  width: 140px;
+  height: 140px;
 }
 
 @media (min-width: 760px) {
@@ -386,26 +388,80 @@ a {
     border-radius: 30px;
   }
 
+  .dark-arch {
+    top: -330px;
+    width: 1420px;
+    height: 900px;
+  }
+
   .signature {
-    margin-top: 56px;
+    margin-top: 78px;
   }
 
   .ac {
-    font-size: 64px;
+    font-size: 82px;
   }
 
   .domain {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .signature-line {
-    width: 110px;
-    margin: 22px auto 34px;
+    width: 118px;
+    margin: 22px auto 36px;
+  }
+
+  .baseline {
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.22em;
+  }
+
+  .method-block {
+    margin-top: 96px;
+  }
+
+  .method-block h1 {
+    font-size: clamp(42px, 4.2vw, 58px);
+    line-height: 0.96;
   }
 
   .cards {
+    margin-top: 138px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
+  }
+
+  .card {
+    min-height: 330px;
+    padding: 34px 30px 30px;
+    border-radius: 18px 18px 30px 30px;
+  }
+
+  .card h2 {
+    margin-top: 42px;
+    font-size: 56px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .circle-one {
+    width: 1040px;
+    height: 1040px;
+  }
+
+  .circle-two {
+    width: 560px;
+    height: 560px;
+  }
+
+  .circle-three {
+    width: 210px;
+    height: 210px;
   }
 
   .proofs div {
@@ -421,19 +477,27 @@ a {
   }
 }
 
-
-
 @media (min-width: 1100px) {
   .frame {
-    padding: 40px 56px 30px;
+    padding: 42px 56px 34px;
+  }
+
+  .dark-arch {
+    top: -360px;
+    width: 1500px;
+    height: 940px;
+  }
+
+  .signature {
+    margin-top: 86px;
   }
 
   .method-block {
-    margin-top: 64px;
+    margin-top: 102px;
   }
 
   .cards {
-    margin-top: 115px;
+    margin-top: 146px;
   }
 }
 
@@ -450,74 +514,5 @@ a {
   .frame::before {
     inset: 10px;
     border-radius: 21px;
-  }
-
-  .dark-arch {
-    top: -122px;
-    width: 760px;
-    height: 520px;
-  }
-
-  .signature {
-    margin-top: 38px;
-  }
-
-  .ac {
-    font-size: 54px;
-  }
-
-  .domain {
-    font-size: 24px;
-  }
-
-  .baseline {
-    max-width: 340px;
-    font-size: 11px;
-    line-height: 1.8;
-    letter-spacing: 0.18em;
-  }
-
-  .method-block {
-    margin-top: 50px;
-  }
-
-  .method-block h1 {
-    font-size: 34px;
-    line-height: 0.82;
-  }
-
-  .cards {
-    margin-top: 58px;
-  }
-
-  .card {
-    min-height: 260px;
-    padding: 26px 24px;
-    border-radius: 16px 16px 24px 24px;
-  }
-
-  .card h2 {
-    margin-top: 34px;
-    font-size: 42px;
-  }
-
-  .card p {
-    font-size: 13px;
-    line-height: 1.7;
-  }
-
-  .circle-one {
-    width: 700px;
-    height: 700px;
-  }
-
-  .circle-two {
-    width: 380px;
-    height: 380px;
-  }
-
-  .circle-three {
-    width: 140px;
-    height: 140px;
   }
 }
