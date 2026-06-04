@@ -58,11 +58,10 @@ export default function Page() {
           <div className="signature-line" />
 
           <p className="baseline">
-  Développer et structurer
+  Développer et structurer les activités
   <br />
-  les activités grâce à l’IA,
-  <br />
-  au service de l’humain.
+  grâce à l’IA, au service de l'humain.
+ 
 </p>
         </section>
 
