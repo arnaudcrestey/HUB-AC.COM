@@ -140,12 +140,8 @@ a {
   width: 90px;
   height: 1px;
   margin: 14px auto 28px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(216, 189, 132, 0.85),
-    transparent
-  );
+  background: rgba(216, 189, 132, 0.95);
+  box-shadow: 0 0 12px rgba(216, 189, 132, 0.22);
 }
 
 .baseline {
