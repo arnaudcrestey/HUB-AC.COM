@@ -96,24 +96,22 @@ export default function Page() {
           <p>Réalisations complémentaires</p>
 
           <div>
-  <a
-    href="https://www.qlykstudio.fr/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ fontWeight: 700 }}
-  >
-    QLYK Studio Auto
-  </a>
+            <a
+              href="https://www.qlykstudio.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              QLYK Studio Auto
+            </a>
 
-  <a
-    href="https://www.cabinet-astrae.fr/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ fontWeight: 700 }}
-  >
-    Cabinet Astraé
-  </a>
-</div>
+            <a
+              href="https://www.cabinet-astrae.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cabinet Astraé
+            </a>
+          </div>
         </section>
 
         <footer className="contact">
