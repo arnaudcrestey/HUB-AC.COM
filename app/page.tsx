@@ -44,8 +44,8 @@ export default function Page() {
         <div className="circle circle-three" />
 
         <header className="topbar">
-  <span>Écosystème</span>
-</header>
+          <span>Écosystème</span>
+        </header>
 
         <section className="signature">
           <div className={`${serif.className} ac`}>AC</div>
@@ -57,21 +57,16 @@ export default function Page() {
           <div className="signature-line" />
 
           <p className="baseline">
-  Développer et structurer les activités
-  <br />
-  grâce à l’IA, au service de l’humain.
- 
-</p>
+            Développer et structurer les activités
+            <br />
+            grâce à l’IA, au service de l’humain.
+          </p>
         </section>
 
         <section className="method-block">
-          
-
           <h1 className={serif.className}>
             Comprendre avant d’agir.
           </h1>
-
-          
         </section>
 
         <section className="cards">
