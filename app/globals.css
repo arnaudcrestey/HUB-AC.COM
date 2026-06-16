@@ -662,3 +662,153 @@ a {
     flex-basis: 82%;
   }
 }
+.possibilities {
+  position: relative;
+  z-index: 10;
+  max-width: 980px;
+  margin: 72px auto 0;
+  padding-top: 34px;
+  border-top: 1px solid rgba(122, 93, 46, 0.14);
+  text-align: center;
+}
+
+.possibilities-head {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.possibilities-head span {
+  display: block;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(122, 93, 46, 0.56);
+}
+
+.possibilities-head h3 {
+  margin: 12px 0 0;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  color: #17110b;
+}
+
+.possibilities-head p {
+  max-width: 520px;
+  margin: 14px auto 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(38, 31, 22, 0.62);
+}
+
+.possibilities-shell {
+  position: relative;
+  max-width: 860px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 14px;
+}
+
+.possibilities-track {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 2px 24px;
+  scrollbar-width: none;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.possibilities-track::-webkit-scrollbar {
+  display: none;
+}
+
+.possibility-card {
+  flex: 0 0 170px;
+  min-height: 168px;
+  scroll-snap-align: center;
+  padding: 22px 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(113, 88, 52, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(238, 228, 211, 0.76));
+  box-shadow:
+    0 20px 48px rgba(58, 44, 25, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  text-align: center;
+}
+
+.possibility-icon {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  color: #17110b;
+}
+
+.possibility-card h4 {
+  margin: 18px 0 0;
+  font-size: 9px;
+  font-weight: 950;
+  line-height: 1.45;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #17110b;
+}
+
+.possibility-card p {
+  margin: 12px 0 0;
+  font-size: 11px;
+  line-height: 1.55;
+  color: rgba(38, 31, 22, 0.64);
+}
+
+.possibilities-button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(113, 88, 52, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.58);
+  color: rgba(45, 37, 27, 0.72);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .possibilities {
+    margin-top: 56px;
+  }
+
+  .possibilities-head h3 {
+    font-size: 28px;
+  }
+
+  .possibilities-shell {
+    display: block;
+    max-width: 100%;
+  }
+
+  .possibilities-button {
+    display: none;
+  }
+
+  .possibilities-track {
+    margin-top: 24px;
+    padding-inline: 24px;
+  }
+
+  .possibility-card {
+    flex-basis: 74%;
+  }
+}
