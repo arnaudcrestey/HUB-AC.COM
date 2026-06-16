@@ -38,17 +38,15 @@ a {
   padding: 24px 18px 30px;
   overflow: hidden;
   border-radius: 28px;
-  border: 1px solid rgba(236, 204, 139, 0.48);
+  border: 1px solid rgba(216, 189, 132, 0.34);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.96), transparent 28rem),
-    radial-gradient(circle at 18% 32%, rgba(255, 228, 170, 0.34), transparent 34rem),
-    radial-gradient(circle at 86% 48%, rgba(166, 123, 57, 0.18), transparent 34rem),
-    linear-gradient(135deg, #fff8ea 0%, #eadcc4 46%, #c8b18a 100%);
+    radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.96), transparent 31rem),
+    radial-gradient(circle at 50% 68%, rgba(216, 189, 132, 0.10), transparent 42rem),
+    linear-gradient(135deg, #fffaf1 0%, #f4ead8 52%, #eadcc4 100%);
   box-shadow:
-    0 100px 220px rgba(0, 0, 0, 0.72),
-    0 42px 120px rgba(0, 0, 0, 0.48),
-    0 0 90px rgba(216, 189, 132, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    0 90px 200px rgba(0, 0, 0, 0.66),
+    0 34px 90px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .frame::before {
@@ -68,8 +66,8 @@ a {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(3, 6, 9, 0.14) 0%, transparent 34%, transparent 76%, rgba(40, 28, 15, 0.13) 100%),
-    radial-gradient(circle at 50% 50%, transparent 58%, rgba(33, 24, 14, 0.14) 100%);
+    linear-gradient(180deg, rgba(3, 6, 9, 0.10) 0%, transparent 34%, transparent 78%, rgba(80, 58, 28, 0.06) 100%),
+    radial-gradient(circle at 50% 50%, transparent 62%, rgba(80, 58, 28, 0.06) 100%);
 }
 .dark-arch {
   position: absolute;
