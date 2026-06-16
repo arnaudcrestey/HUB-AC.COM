@@ -94,7 +94,7 @@ export default function Page() {
         <ProofsCarousel serifClassName={serif.className} />
 
         <footer className="contact">
-          <span>Demande spécifique</span>
+          <span>Échanger sur un projet :</span>
           <a href="mailto:demande@arnaudcrestey.com">
             demande@arnaudcrestey.com
           </a>
