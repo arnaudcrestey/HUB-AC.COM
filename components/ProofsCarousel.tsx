@@ -46,9 +46,9 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
   return (
     <section className="proofs-wheel" aria-label="Applications concrètes">
       <div className="proofs-wheel-head">
-        <span>Applications concrètes</span>
+        <span>Quelques réalisations.</span>
         <h2 className={serifClassName}>Des univers différents.</h2>
-        <p>Quelques exemples dans des univers différents.</p>
+        <p>Différents domaines. Une même démarche.</p>
       </div>
 
       <div className="carousel-shell">
