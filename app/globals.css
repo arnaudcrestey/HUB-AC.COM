@@ -1016,3 +1016,20 @@ a {
     color: rgba(28, 28, 25, 0.52);
   }
 }
+@media (max-width: 720px) {
+  .baseline {
+    max-width: 300px;
+    margin-top: 46px;
+    font-size: 12px;
+    line-height: 2.05;
+    letter-spacing: 0.18em;
+  }
+
+  .method-block h1 {
+    max-width: 330px;
+    margin-inline: auto;
+    font-size: 52px;
+    line-height: 0.86;
+    letter-spacing: -0.07em;
+  }
+}
