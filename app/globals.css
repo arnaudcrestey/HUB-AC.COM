@@ -94,7 +94,7 @@ a {
 .method-block,
 .cards,
 .ecosystem-note,
-.proofs,
+.proofs-wheel,
 .contact {
   position: relative;
   z-index: 10;
@@ -481,56 +481,68 @@ a {
     margin-top: 115px;
   }
 }
+}
 .proofs-wheel {
   position: relative;
   z-index: 10;
-  max-width: 880px;
-  margin: 38px auto 0;
-  padding-top: 30px;
+  max-width: 900px;
+  margin: 46px auto 0;
+  padding-top: 34px;
   border-top: 1px solid rgba(122, 93, 46, 0.14);
   text-align: center;
 }
 
-.proofs-wheel-head p {
-  margin: 0;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.36em;
-  text-transform: uppercase;
-  color: rgba(73, 61, 45, 0.46);
-}
-
 .proofs-wheel-head span {
   display: block;
-  margin-top: 8px;
   font-size: 8px;
-  font-weight: 850;
-  letter-spacing: 0.3em;
+  font-weight: 900;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(122, 93, 46, 0.38);
+  color: rgba(122, 93, 46, 0.56);
+}
+
+.proofs-wheel-head h2 {
+  margin: 12px 0 0;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  color: #17110b;
+}
+
+.proofs-wheel-head p {
+  max-width: 420px;
+  margin: 14px auto 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(38, 31, 22, 0.62);
+}
+
+.carousel-shell {
+  position: relative;
+  max-width: 700px;
+  margin: 28px auto 0;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 14px;
 }
 
 .proofs-track {
-  position: relative;
-  margin-top: 20px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 12px 34px 22px;
+  scroll-behavior: smooth;
+  padding: 8px 2px 24px;
   scrollbar-width: none;
-  cursor: grab;
   mask-image: linear-gradient(
     90deg,
     transparent,
-    black 8%,
-    black 92%,
+    black 12%,
+    black 88%,
     transparent
   );
-}
-
-.proofs-track:active {
-  cursor: grabbing;
 }
 
 .proofs-track::-webkit-scrollbar {
@@ -538,119 +550,119 @@ a {
 }
 
 .proof-card {
-  position: relative;
-  flex: 0 0 238px;
-  min-height: 132px;
+  flex: 0 0 280px;
+  min-height: 196px;
   scroll-snap-align: center;
-  padding: 24px 22px 22px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.62);
+  padding: 26px 24px;
+  border-radius: 26px;
+  border: 1px solid rgba(113, 88, 52, 0.2);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.92), transparent 6rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(232, 221, 204, 0.62));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(238, 228, 211, 0.88));
   box-shadow:
-    0 22px 54px rgba(58, 44, 25, 0.13),
+    0 26px 66px rgba(58, 44, 25, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.92);
   text-align: left;
-  overflow: hidden;
   transition:
     transform 0.28s ease,
     border-color 0.28s ease,
     box-shadow 0.28s ease;
 }
 
-.proof-card::after {
-  content: "";
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  width: 38px;
-  height: 38px;
-  border-right: 1px solid rgba(133, 103, 53, 0.2);
-  border-bottom: 1px solid rgba(133, 103, 53, 0.2);
-}
-
 .proof-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: rgba(133, 103, 53, 0.42);
   box-shadow:
-    0 34px 76px rgba(58, 44, 25, 0.22),
-    0 0 34px rgba(216, 189, 132, 0.14),
+    0 36px 86px rgba(58, 44, 25, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
-.proof-card span {
+.proof-field {
   display: block;
   min-height: 34px;
   font-size: 8px;
   font-weight: 950;
-  line-height: 1.55;
-  letter-spacing: 0.26em;
+  line-height: 1.5;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(122, 93, 46, 0.74);
+  color: rgba(122, 93, 46, 0.72);
 }
 
 .proof-card strong {
   display: block;
-  margin-top: 14px;
-  font-size: 23px;
+  margin-top: 18px;
+  font-size: 28px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.055em;
   color: #17110b;
 }
 
-.proof-card em {
+.proof-card p {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: rgba(38, 31, 22, 0.66);
+}
+
+.proof-access {
   display: block;
-  margin-top: 22px;
+  margin-top: 24px;
   font-size: 8px;
-  font-style: normal;
   font-weight: 950;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #856735;
 }
 
-@media (min-width: 900px) {
-  .proofs-track {
-    justify-content: center;
-    overflow-x: visible;
-    padding-inline: 0;
-    mask-image: none;
-  }
+.carousel-button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(113, 88, 52, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.58);
+  color: rgba(45, 37, 27, 0.72);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow:
+    0 18px 40px rgba(58, 44, 25, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  transition:
+    transform 0.24s ease,
+    border-color 0.24s ease,
+    background 0.24s ease;
+}
 
-  .proof-card {
-    flex: 0 1 190px;
-    min-height: 124px;
-  }
-
-  .proof-card:nth-child(1),
-  .proof-card:nth-child(4) {
-    transform: translateY(10px) scale(0.94);
-    opacity: 0.82;
-  }
-
-  .proof-card:nth-child(2),
-  .proof-card:nth-child(3) {
-    transform: translateY(0) scale(1);
-  }
-
-  .proof-card:hover {
-    transform: translateY(-7px) scale(1.02);
-    opacity: 1;
-  }
+.carousel-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(133, 103, 53, 0.42);
+  background: rgba(255, 250, 240, 0.82);
 }
 
 @media (max-width: 720px) {
   .proofs-wheel {
-    margin-top: 30px;
+    margin-top: 34px;
+  }
+
+  .proofs-wheel-head h2 {
+    font-size: 28px;
+  }
+
+  .carousel-shell {
+    display: block;
+    max-width: 100%;
+  }
+
+  .carousel-button {
+    display: none;
   }
 
   .proofs-track {
+    margin-top: 24px;
     padding-inline: 24px;
   }
 
   .proof-card {
-    flex-basis: 78%;
+    flex-basis: 82%;
   }
 }
