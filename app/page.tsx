@@ -58,17 +58,26 @@ export default function Page() {
           <div className="signature-line" />
 
           <p className="baseline">
-            Développer et structurer les activités
+            Développer et structurer
             <br />
-            grâce à l’IA, au service de l’humain.
+            les activités grâce à l’IA,
+            <br />
+            au service de l’humain.
           </p>
         </section>
 
         <section className="method-block">
-          <h1 className={serif.className}>Comprendre avant d’agir.</h1>
+          <h1 className={serif.className}>
+            Comprendre
+            <br />
+            avant d’agir.
+          </h1>
         </section>
 
-        <section className="cards" aria-label="Les trois piliers de l'écosystème">
+        <section
+          className="cards"
+          aria-label="Les trois piliers de l'écosystème"
+        >
           {pillars.map((pillar) => (
             <a
               key={pillar.name}
@@ -78,15 +87,22 @@ export default function Page() {
               className="card"
             >
               <span className="dimension">{pillar.dimension}</span>
+
               <h2 className={serif.className}>{pillar.name}</h2>
+
               <span className="subtitle">{pillar.subtitle}</span>
+
               <p>{pillar.text}</p>
+
               <span className="access">Découvrir</span>
             </a>
           ))}
         </section>
 
-        <section className="ecosystem-note" aria-label="Positionnement de l'écosystème">
+        <section
+          className="ecosystem-note"
+          aria-label="Positionnement de l'écosystème"
+        >
           <span>Trois lectures.</span>
           <span>Une même organisation.</span>
         </section>
