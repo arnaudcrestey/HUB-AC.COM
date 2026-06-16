@@ -36,23 +36,27 @@ const pillars = [
 
 const proofs = [
   {
-    sector: "Commerce",
+    field: "Commerce",
     name: "QLYK Studio",
+    description: "Valoriser un véhicule par une présence visuelle plus crédible.",
     href: "https://www.qlykstudio.fr/",
   },
   {
-    sector: "Médico-social & prévention",
+    field: "Médico-social & prévention",
     name: "OSYS",
+    description: "Aider à faire le point sur une situation de violence au sein du couple.",
     href: "https://www.osys14.com/",
   },
   {
-    sector: "Développement personnel",
+    field: "Développement personnel",
     name: "Cabinet Astraé",
+    description: "Clarifier une situation personnelle avec une lecture sensible et structurée.",
     href: "https://www.cabinet-astrae.fr/",
   },
   {
-    sector: "Éducation & prévention",
+    field: "Éducation & prévention",
     name: "LANGOCHAT",
+    description: "Aider les adultes à trouver les bons mots avec les enfants.",
     href: "https://www.langochat.fr/",
   },
 ];
@@ -70,7 +74,7 @@ export default function Page() {
           <span>Écosystème</span>
         </header>
 
-        <section className="signature">
+        <section className="signature" aria-label="Signature Arnaud Crestey">
           <div className={`${serif.className} ac`}>AC</div>
 
           <div className={`${serif.className} domain`}>
@@ -90,7 +94,7 @@ export default function Page() {
           <h1 className={serif.className}>Comprendre avant d’agir.</h1>
         </section>
 
-        <section className="cards">
+        <section className="cards" aria-label="Les trois piliers de l'écosystème">
           {pillars.map((pillar) => (
             <a
               key={pillar.name}
@@ -108,15 +112,18 @@ export default function Page() {
           ))}
         </section>
 
-        <div className="ecosystem-note">
+        <section className="ecosystem-note" aria-label="Positionnement de l'écosystème">
           <span>Trois lectures.</span>
           <span>Une même organisation.</span>
-        </div>
+        </section>
 
-        <section className="proofs-wheel" aria-label="Réalisations complémentaires">
+        <section className="proofs-wheel" aria-label="Applications concrètes">
           <div className="proofs-wheel-head">
-            <p>Réalisations complémentaires</p>
-            <span>Glisser pour explorer</span>
+            <span>Applications concrètes</span>
+            <h2 className={serif.className}>Des projets qui éprouvent la méthode.</h2>
+            <p>
+              Des projets conçus pour répondre à des besoins différents.
+            </p>
           </div>
 
           <div className="proofs-track">
@@ -128,9 +135,10 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="proof-card"
               >
-                <span>{proof.sector}</span>
+                <span className="proof-field">{proof.field}</span>
                 <strong className={serif.className}>{proof.name}</strong>
-                <em>Découvrir</em>
+                <p>{proof.description}</p>
+                <span className="proof-access">Découvrir</span>
               </a>
             ))}
           </div>
