@@ -46,7 +46,7 @@ const proofs = [
   name: "B.E.S.T.",
   description:
     "Permettre aux salariés de faire le point sur une situation professionnelle difficile.",
-  href: "https://www.best.systia.fr/",
+  href: "https://best.systia.fr/",
 },
 ];
 
