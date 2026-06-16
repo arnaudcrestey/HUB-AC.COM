@@ -147,12 +147,20 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
 
       <section className="possibilities" aria-label="Autres applications possibles">
         <div className="possibilities-head">
-          <span>Et demain ?</span>
-          <h3 className={serifClassName}>D’autres projets sont possibles.</h3>
-          <p>
-            Chaque organisation possède ses propres enjeux. La démarche reste la
-            même : comprendre, structurer et construire.
-          </p>
+          <span>Se projeter</span>
+
+<h3 className={serifClassName}>
+  Votre besoin peut devenir un outil.
+</h3>
+
+<p>
+  Une idée, un savoir-faire ou une problématique peuvent être structurés
+  en dispositif clair, utile et exploitable.
+</p>
+
+<a href="mailto:demande@arnaudcrestey.com" className="possibilities-cta">
+  Échanger sur un projet
+</a>
         </div>
 
         <div className="possibilities-shell">
