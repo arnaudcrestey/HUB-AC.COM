@@ -31,7 +31,6 @@ a {
     radial-gradient(circle at 50% 100%, rgba(255, 244, 220, 0.12), transparent 42rem),
     linear-gradient(180deg, #06080c 0%, #11110d 45%, #030609 100%);
 }
-
 .frame {
   position: relative;
   width: 100%;
@@ -39,15 +38,17 @@ a {
   padding: 24px 18px 30px;
   overflow: hidden;
   border-radius: 28px;
-  border: 1px solid rgba(216, 189, 132, 0.36);
+  border: 1px solid rgba(236, 204, 139, 0.48);
   background:
-    radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.92), transparent 31rem),
-    radial-gradient(circle at 50% 63%, rgba(116, 91, 50, 0.12), transparent 44rem),
-    linear-gradient(135deg, #fffaf0 0%, #f1e6d5 48%, #d7c6ab 100%);
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.96), transparent 28rem),
+    radial-gradient(circle at 18% 32%, rgba(255, 228, 170, 0.34), transparent 34rem),
+    radial-gradient(circle at 86% 48%, rgba(166, 123, 57, 0.18), transparent 34rem),
+    linear-gradient(135deg, #fff8ea 0%, #eadcc4 46%, #c8b18a 100%);
   box-shadow:
-    0 90px 200px rgba(0, 0, 0, 0.68),
-    0 34px 90px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 100px 220px rgba(0, 0, 0, 0.72),
+    0 42px 120px rgba(0, 0, 0, 0.48),
+    0 0 90px rgba(216, 189, 132, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
 }
 
 .frame::before {
@@ -70,7 +71,6 @@ a {
     linear-gradient(180deg, rgba(3, 6, 9, 0.14) 0%, transparent 34%, transparent 76%, rgba(40, 28, 15, 0.13) 100%),
     radial-gradient(circle at 50% 50%, transparent 58%, rgba(33, 24, 14, 0.14) 100%);
 }
-
 .dark-arch {
   position: absolute;
   z-index: 0;
@@ -81,12 +81,13 @@ a {
   transform: translateX(-50%);
   border-radius: 0 0 999px 999px;
   background:
-    radial-gradient(circle at 50% 18%, rgba(216, 189, 132, 0.22), transparent 18rem),
-    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.07), transparent 32rem),
-    linear-gradient(180deg, #071019 0%, #030609 70%, rgba(3, 6, 9, 0) 100%);
+    radial-gradient(circle at 50% 18%, rgba(236, 204, 139, 0.34), transparent 18rem),
+    radial-gradient(circle at 50% 55%, rgba(255, 255, 255, 0.09), transparent 30rem),
+    linear-gradient(180deg, #070d13 0%, #030609 62%, rgba(3, 6, 9, 0) 100%);
   box-shadow:
-    0 46px 150px rgba(0, 0, 0, 0.48),
-    inset 0 -1px 0 rgba(216, 189, 132, 0.18);
+    0 54px 160px rgba(0, 0, 0, 0.55),
+    0 0 90px rgba(216, 189, 132, 0.20),
+    inset 0 -1px 0 rgba(236, 204, 139, 0.24);
 }
 
 .topbar,
@@ -183,14 +184,15 @@ a {
   position: relative;
   min-height: 260px;
   padding: 26px 24px;
-  border-radius: 16px 16px 24px 24px;
-  border: 1px solid rgba(113, 88, 52, 0.25);
+  border-radius: 18px 18px 28px 28px;
+  border: 1px solid rgba(156, 116, 51, 0.32);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(238, 228, 211, 0.9)),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.64), rgba(232, 221, 204, 0.86));
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.9), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(238, 224, 199, 0.94));
   box-shadow:
-    0 34px 90px rgba(58, 44, 25, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.84);
+    0 38px 95px rgba(58, 44, 25, 0.24),
+    0 0 44px rgba(216, 189, 132, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -202,11 +204,11 @@ a {
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: rgba(133, 103, 53, 0.5);
+  border-color: rgba(156, 116, 51, 0.56);
   box-shadow:
-    0 48px 110px rgba(58, 44, 25, 0.3),
-    0 0 48px rgba(216, 189, 132, 0.13),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 52px 120px rgba(58, 44, 25, 0.34),
+    0 0 62px rgba(216, 189, 132, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 .card::before {
