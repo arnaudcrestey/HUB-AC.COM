@@ -812,3 +812,16 @@ a {
     flex-basis: 74%;
   }
 }
+.possibilities-cta {
+  display: inline-flex;
+  margin-top: 22px;
+  padding: 11px 18px;
+  border: 1px solid rgba(113, 88, 52, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.54);
+  color: rgba(45, 37, 27, 0.78);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
