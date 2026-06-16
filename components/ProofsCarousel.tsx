@@ -1,7 +1,16 @@
 "use client";
 
 import { useRef } from "react";
-
+import {
+  Building2,
+  Users,
+  Compass,
+  Home,
+  HandHeart,
+  Landmark,
+  HeartPulse,
+  GraduationCap,
+} from "lucide-react";
 const proofs = [
   {
     field: "Commerce",
@@ -37,45 +46,44 @@ const possibilities = [
   {
     title: "Organisation & entreprise",
     text: "Structurer, clarifier et piloter une activité.",
-    icon: "▦",
+    icon: Building2,
   },
   {
     title: "Ressources humaines",
     text: "Recrutement, équipes et dynamiques humaines.",
-    icon: "◇",
+    icon: Users,
   },
   {
     title: "Orientation professionnelle",
     text: "Aider à prendre une décision ou construire un parcours.",
-    icon: "→",
+    icon: Compass,
   },
   {
     title: "Aidants & familles",
     text: "Soutenir les proches dans des situations complexes.",
-    icon: "⌂",
+    icon: Home,
   },
   {
-    title: "Associations & ESS",
+    title: "Associations",
     text: "Renforcer l’impact et la lisibilité des structures.",
-    icon: "◎",
+    icon: HandHeart,
   },
   {
     title: "Collectivités",
     text: "Mieux comprendre les besoins des citoyens.",
-    icon: "⌂",
+    icon: Landmark,
   },
   {
     title: "Santé & prévention",
     text: "Informer, prévenir et orienter.",
-    icon: "♡",
+    icon: HeartPulse,
   },
   {
     title: "Formation & transmission",
     text: "Transformer une expertise en outils utiles.",
-    icon: "△",
+    icon: GraduationCap,
   },
 ];
-
 type ProofsCarouselProps = {
   serifClassName: string;
 };
