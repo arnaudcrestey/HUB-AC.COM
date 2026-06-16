@@ -11,6 +11,7 @@ import {
   HeartPulse,
   GraduationCap,
 } from "lucide-react";
+
 const proofs = [
   {
     field: "Commerce",
@@ -84,6 +85,7 @@ const possibilities = [
     icon: GraduationCap,
   },
 ];
+
 type ProofsCarouselProps = {
   serifClassName: string;
 };
@@ -153,18 +155,13 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
         </div>
       </section>
 
-      <section className="possibilities" aria-label="Autres applications possibles">
+      <section className="possibilities" aria-label="Autres projets possibles">
         <div className="possibilities-head">
           <span>Se projeter</span>
-
-<h3 className={serifClassName}>
-  Chaque situation mérite sa propre réponse.
-</h3>
-
-<p>
-  Comprendre • Structurer • Construire
-</p>
-
+          <h3 className={serifClassName}>
+            Chaque situation mérite sa propre réponse.
+          </h3>
+          <p>Comprendre • Structurer • Construire</p>
         </div>
 
         <div className="possibilities-shell">
@@ -178,15 +175,20 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
           </button>
 
           <div ref={possibilitiesTrackRef} className="possibilities-track">
-            {possibilities.map((item) => (
-              <article key={item.title} className="possibility-card">
-                <span className="possibility-icon" aria-hidden="true">
-                  {item.icon}
-                </span>
-                <h4>{item.title}</h4>
-                <p>{item.text}</p>
-              </article>
-            ))}
+            {possibilities.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <article key={item.title} className="possibility-card">
+                  <div className="possibility-icon">
+                    <Icon size={26} strokeWidth={1.5} />
+                  </div>
+
+                  <h4>{item.title}</h4>
+                  <p>{item.text}</p>
+                </article>
+              );
+            })}
           </div>
 
           <button
