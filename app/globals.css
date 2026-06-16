@@ -482,45 +482,55 @@ a {
   }
 }
 .proofs-wheel {
-  margin: 34px auto 0;
-  width: min(100%, 760px);
+  position: relative;
+  z-index: 10;
+  max-width: 880px;
+  margin: 38px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid rgba(122, 93, 46, 0.14);
   text-align: center;
 }
 
 .proofs-wheel-head p {
   margin: 0;
-  color: rgba(126, 100, 62, 0.72);
-  font-size: 0.68rem;
-  font-weight: 800;
+  font-size: 9px;
+  font-weight: 900;
   letter-spacing: 0.36em;
   text-transform: uppercase;
+  color: rgba(73, 61, 45, 0.46);
 }
 
 .proofs-wheel-head span {
   display: block;
   margin-top: 8px;
-  color: rgba(35, 28, 20, 0.38);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
+  color: rgba(122, 93, 46, 0.38);
 }
 
 .proofs-track {
-  margin-top: 18px;
+  position: relative;
+  margin-top: 20px;
   display: flex;
-  gap: 14px;
+  gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 8px 34px 18px;
+  padding: 12px 34px 22px;
   scrollbar-width: none;
+  cursor: grab;
   mask-image: linear-gradient(
     90deg,
     transparent,
-    black 9%,
-    black 91%,
+    black 8%,
+    black 92%,
     transparent
   );
+}
+
+.proofs-track:active {
+  cursor: grabbing;
 }
 
 .proofs-track::-webkit-scrollbar {
@@ -528,72 +538,119 @@ a {
 }
 
 .proof-card {
+  position: relative;
+  flex: 0 0 238px;
+  min-height: 132px;
   scroll-snap-align: center;
-  flex: 0 0 220px;
-  min-height: 118px;
-  padding: 22px 20px;
+  padding: 24px 22px 22px;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.62);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(250, 246, 237, 0.48));
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.92), transparent 6rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(232, 221, 204, 0.62));
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.75),
-    0 18px 36px rgba(48, 36, 20, 0.10);
+    0 22px 54px rgba(58, 44, 25, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
   text-align: left;
+  overflow: hidden;
   transition:
-    transform 220ms ease,
-    box-shadow 220ms ease,
-    border-color 220ms ease;
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.proof-card::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 38px;
+  height: 38px;
+  border-right: 1px solid rgba(133, 103, 53, 0.2);
+  border-bottom: 1px solid rgba(133, 103, 53, 0.2);
 }
 
 .proof-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(143, 112, 66, 0.42);
+  transform: translateY(-6px);
+  border-color: rgba(133, 103, 53, 0.42);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.82),
-    0 24px 46px rgba(48, 36, 20, 0.16);
+    0 34px 76px rgba(58, 44, 25, 0.22),
+    0 0 34px rgba(216, 189, 132, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 .proof-card span {
   display: block;
-  color: rgba(126, 100, 62, 0.78);
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.24em;
+  min-height: 34px;
+  font-size: 8px;
+  font-weight: 950;
+  line-height: 1.55;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
+  color: rgba(122, 93, 46, 0.74);
 }
 
 .proof-card strong {
   display: block;
-  margin-top: 16px;
-  color: #18130d;
-  font-family: var(--font-serif);
-  font-size: 1.55rem;
-  font-weight: 500;
+  margin-top: 14px;
+  font-size: 23px;
   line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  color: #17110b;
 }
 
 .proof-card em {
   display: block;
-  margin-top: 18px;
-  color: rgba(126, 100, 62, 0.86);
-  font-size: 0.62rem;
+  margin-top: 22px;
+  font-size: 8px;
   font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.26em;
+  font-weight: 950;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
+  color: #856735;
+}
+
+@media (min-width: 900px) {
+  .proofs-track {
+    justify-content: center;
+    overflow-x: visible;
+    padding-inline: 0;
+    mask-image: none;
+  }
+
+  .proof-card {
+    flex: 0 1 190px;
+    min-height: 124px;
+  }
+
+  .proof-card:nth-child(1),
+  .proof-card:nth-child(4) {
+    transform: translateY(10px) scale(0.94);
+    opacity: 0.82;
+  }
+
+  .proof-card:nth-child(2),
+  .proof-card:nth-child(3) {
+    transform: translateY(0) scale(1);
+  }
+
+  .proof-card:hover {
+    transform: translateY(-7px) scale(1.02);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 720px) {
   .proofs-wheel {
-    margin-top: 28px;
+    margin-top: 30px;
   }
 
   .proofs-track {
-    padding-inline: 22px;
+    padding-inline: 24px;
   }
 
   .proof-card {
-    flex-basis: 76%;
+    flex-basis: 78%;
   }
 }
