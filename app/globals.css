@@ -38,17 +38,18 @@ a {
   padding: 24px 18px 30px;
   overflow: hidden;
   border-radius: 28px;
-  border: 1px solid rgba(216, 189, 132, 0.34);
+  border: 1px solid rgba(233, 207, 151, 0.42);
   background:
-    radial-gradient(circle at 50% 6%, rgba(255, 255, 255, 0.96), transparent 31rem),
-    radial-gradient(circle at 50% 68%, rgba(216, 189, 132, 0.10), transparent 42rem),
-    linear-gradient(135deg, #fffaf1 0%, #f4ead8 52%, #eadcc4 100%);
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.98), transparent 30rem),
+    radial-gradient(circle at 16% 38%, rgba(255, 244, 218, 0.56), transparent 36rem),
+    radial-gradient(circle at 84% 46%, rgba(232, 205, 145, 0.28), transparent 34rem),
+    linear-gradient(135deg, #fffdf7 0%, #f5ead5 48%, #e8d8b9 100%);
   box-shadow:
-    0 90px 200px rgba(0, 0, 0, 0.66),
-    0 34px 90px rgba(0, 0, 0, 0.42),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+    0 110px 240px rgba(0, 0, 0, 0.76),
+    0 38px 110px rgba(0, 0, 0, 0.48),
+    0 0 90px rgba(233, 207, 151, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
 }
-
 .frame::before {
   content: "";
   position: absolute;
@@ -79,13 +80,13 @@ a {
   transform: translateX(-50%);
   border-radius: 0 0 999px 999px;
   background:
-    radial-gradient(circle at 50% 18%, rgba(236, 204, 139, 0.34), transparent 18rem),
-    radial-gradient(circle at 50% 55%, rgba(255, 255, 255, 0.09), transparent 30rem),
-    linear-gradient(180deg, #070d13 0%, #030609 62%, rgba(3, 6, 9, 0) 100%);
+    radial-gradient(circle at 50% 20%, rgba(238, 207, 142, 0.34), transparent 17rem),
+    radial-gradient(circle at 50% 56%, rgba(255, 255, 255, 0.1), transparent 30rem),
+    linear-gradient(180deg, #06090d 0%, #020304 62%, rgba(2, 3, 4, 0) 100%);
   box-shadow:
-    0 54px 160px rgba(0, 0, 0, 0.55),
-    0 0 90px rgba(216, 189, 132, 0.20),
-    inset 0 -1px 0 rgba(236, 204, 139, 0.24);
+    0 58px 170px rgba(0, 0, 0, 0.58),
+    0 0 110px rgba(238, 207, 142, 0.22),
+    inset 0 -1px 0 rgba(238, 207, 142, 0.26);
 }
 
 .topbar,
@@ -177,20 +178,19 @@ a {
   grid-template-columns: 1fr;
   gap: 16px;
 }
-
 .card {
   position: relative;
   min-height: 260px;
   padding: 26px 24px;
-  border-radius: 18px 18px 28px 28px;
-  border: 1px solid rgba(156, 116, 51, 0.32);
+  border-radius: 18px 18px 30px 30px;
+  border: 1px solid rgba(163, 123, 57, 0.28);
   background:
-    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.9), transparent 18rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(238, 224, 199, 0.94));
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.96), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 235, 215, 0.92));
   box-shadow:
-    0 38px 95px rgba(58, 44, 25, 0.24),
-    0 0 44px rgba(216, 189, 132, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 42px 100px rgba(45, 34, 18, 0.22),
+    0 0 48px rgba(233, 207, 151, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -208,16 +208,15 @@ a {
     0 0 62px rgba(216, 189, 132, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
-
 .card::before {
   content: "";
   position: absolute;
   inset: 0 0 auto;
-  height: 5px;
+  height: 6px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(133, 103, 53, 0.58),
+    rgba(210, 164, 72, 0.72),
     transparent
   );
 }
@@ -412,11 +411,15 @@ a {
   .method-block {
     margin-top: 66px;
   }
-
-  .method-block h1 {
-    font-size: clamp(30px, 4.2vw, 52px);
-    line-height: 0.96;
-  }
+.method-block h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  color: #0f0b07;
+  text-shadow: 0 18px 50px rgba(255, 255, 255, 0.36);
+}
 
   .cards {
     margin-top: 110px;
