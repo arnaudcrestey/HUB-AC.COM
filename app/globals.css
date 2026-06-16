@@ -481,3 +481,119 @@ a {
     margin-top: 115px;
   }
 }
+.proofs-wheel {
+  margin: 34px auto 0;
+  width: min(100%, 760px);
+  text-align: center;
+}
+
+.proofs-wheel-head p {
+  margin: 0;
+  color: rgba(126, 100, 62, 0.72);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+
+.proofs-wheel-head span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(35, 28, 20, 0.38);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.proofs-track {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 8px 34px 18px;
+  scrollbar-width: none;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 9%,
+    black 91%,
+    transparent
+  );
+}
+
+.proofs-track::-webkit-scrollbar {
+  display: none;
+}
+
+.proof-card {
+  scroll-snap-align: center;
+  flex: 0 0 220px;
+  min-height: 118px;
+  padding: 22px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(250, 246, 237, 0.48));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 18px 36px rgba(48, 36, 20, 0.10);
+  text-align: left;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.proof-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(143, 112, 66, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 24px 46px rgba(48, 36, 20, 0.16);
+}
+
+.proof-card span {
+  display: block;
+  color: rgba(126, 100, 62, 0.78);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.proof-card strong {
+  display: block;
+  margin-top: 16px;
+  color: #18130d;
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.proof-card em {
+  display: block;
+  margin-top: 18px;
+  color: rgba(126, 100, 62, 0.86);
+  font-size: 0.62rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .proofs-wheel {
+    margin-top: 28px;
+  }
+
+  .proofs-track {
+    padding-inline: 22px;
+  }
+
+  .proof-card {
+    flex-basis: 76%;
+  }
+}
