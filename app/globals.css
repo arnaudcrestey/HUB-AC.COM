@@ -828,3 +828,28 @@ a {
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
+@media (max-width: 720px) {
+  .frame {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.98), transparent 28rem),
+      radial-gradient(circle at 50% 70%, rgba(245, 238, 224, 0.72), transparent 34rem),
+      linear-gradient(180deg, #fffdf8 0%, #f7f0e4 55%, #efe4d1 100%);
+  }
+
+  .card,
+  .proof-card,
+  .possibility-card {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.98), transparent 14rem),
+      linear-gradient(180deg, #ffffff 0%, #faf5ec 100%);
+    border-color: rgba(216, 189, 132, 0.22);
+    box-shadow:
+      0 22px 54px rgba(31, 24, 15, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  }
+
+  .frame::after {
+    background:
+      linear-gradient(180deg, rgba(3, 6, 9, 0.08) 0%, transparent 36%, transparent 82%, rgba(40, 28, 15, 0.04) 100%);
+  }
+}
