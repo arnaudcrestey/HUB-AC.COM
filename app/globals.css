@@ -831,32 +831,64 @@ a {
 @media (max-width: 720px) {
   .page {
     padding: 0;
-    background: #030609;
+    background: #020304;
   }
 
   .frame {
     border-radius: 0;
-    border-inline: 0;
+    border: 0;
     padding: 18px 14px 28px;
     background:
-      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 1), transparent 22rem),
-      radial-gradient(circle at 50% 38%, rgba(255, 248, 235, 0.92), transparent 30rem),
-      linear-gradient(180deg, #fffdf8 0%, #faf4ea 54%, #f5ebdc 100%);
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.96), transparent 22rem),
+      radial-gradient(circle at 50% 42%, rgba(238, 242, 247, 0.72), transparent 34rem),
+      linear-gradient(180deg, #fbfbf8 0%, #f1f2ef 52%, #e7e6df 100%);
   }
 
   .frame::before {
     inset: 10px;
-    border-color: rgba(189, 158, 103, 0.18);
+    border-color: rgba(20, 20, 18, 0.12);
   }
 
   .frame::after {
     background:
-      linear-gradient(180deg, rgba(3, 6, 9, 0.06) 0%, transparent 34%, transparent 86%, rgba(3, 6, 9, 0.04) 100%);
+      linear-gradient(180deg, rgba(2, 3, 4, 0.08) 0%, transparent 35%, transparent 86%, rgba(2, 3, 4, 0.04) 100%);
+  }
+
+  .dark-arch {
+    background:
+      radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.08), transparent 18rem),
+      linear-gradient(180deg, #020304 0%, #090b0d 64%, rgba(9, 11, 13, 0) 100%);
+    box-shadow:
+      0 54px 160px rgba(0, 0, 0, 0.52),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .topbar,
+  .dimension,
+  .subtitle,
+  .access,
+  .ecosystem-note,
+  .proof-field,
+  .proof-access,
+  .possibilities-head span {
+    color: rgba(72, 66, 55, 0.72);
   }
 
   .cards {
     margin-top: 56px;
     gap: 18px;
+  }
+
+  .card,
+  .proof-card,
+  .possibility-card {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 1), transparent 14rem),
+      linear-gradient(180deg, #ffffff 0%, #f6f6f2 100%);
+    border-color: rgba(30, 30, 26, 0.14);
+    box-shadow:
+      0 24px 58px rgba(0, 0, 0, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.98);
   }
 
   .card {
@@ -874,6 +906,7 @@ a {
     margin: 22px 0 32px;
     font-size: 16px;
     line-height: 1.65;
+    color: rgba(28, 28, 25, 0.66);
   }
 
   .proofs-wheel {
@@ -900,6 +933,7 @@ a {
   .proof-card p {
     font-size: 16px;
     line-height: 1.6;
+    color: rgba(28, 28, 25, 0.64);
   }
 
   .possibilities {
