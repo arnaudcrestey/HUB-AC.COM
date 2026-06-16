@@ -159,8 +159,10 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
         <div className="possibilities-head">
           <span>Se projeter</span>
           <h3 className={serifClassName}>
-            Chaque situation mérite sa propre réponse.
-          </h3>
+  Chaque situation mérite
+  <br className="block sm:hidden" />
+  sa propre réponse.
+</h3>
           <p>Comprendre • Structurer • Construire</p>
         </div>
 
