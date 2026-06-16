@@ -6,25 +6,29 @@ const proofs = [
   {
     field: "Commerce",
     name: "QLYK Studio",
-    description: "Valoriser un véhicule par une présence visuelle plus crédible.",
+    description:
+  "Valoriser un véhicule avec des visuels premium conçus pour capter l’attention.",
     href: "https://www.qlykstudio.fr/",
   },
   {
     field: "Médico-social & prévention",
     name: "OSYS",
-    description: "Aider à faire le point sur une situation de violence au sein du couple.",
+    description:
+      "Permettre de faire le point sur une situation de violence au sein du couple.",
     href: "https://www.osys14.com/",
   },
   {
     field: "Développement personnel",
     name: "Cabinet Astraé",
-    description: "Clarifier une situation personnelle avec une lecture sensible et structurée.",
+    description:
+      "Apporter un éclairage complémentaire dans les périodes de questionnement ou de transition.",
     href: "https://www.cabinet-astrae.fr/",
   },
   {
     field: "Éducation & prévention",
     name: "LANGOCHAT",
-    description: "Aider les adultes à trouver les bons mots avec les enfants.",
+    description:
+      "Aider les adultes à trouver les mots justes pour dialoguer avec les enfants.",
     href: "https://www.langochat.fr/",
   },
 ];
