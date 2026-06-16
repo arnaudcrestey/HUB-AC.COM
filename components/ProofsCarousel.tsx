@@ -154,8 +154,7 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
 </h3>
 
 <p>
-  Une idée, un savoir-faire ou une problématique peuvent être structurés
-  en dispositif clair, utile et exploitable.
+  Comprendre • Structurer • Construire
 </p>
 
         </div>
