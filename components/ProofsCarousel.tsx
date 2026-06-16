@@ -150,7 +150,7 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
           <span>Se projeter</span>
 
 <h3 className={serifClassName}>
-  Votre besoin peut devenir un outil.
+  Chaque situation mérite sa propre réponse.
 </h3>
 
 <p>
@@ -158,9 +158,6 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
   en dispositif clair, utile et exploitable.
 </p>
 
-<a href="mailto:demande@arnaudcrestey.com" className="possibilities-cta">
-  Échanger sur un projet
-</a>
         </div>
 
         <div className="possibilities-shell">
