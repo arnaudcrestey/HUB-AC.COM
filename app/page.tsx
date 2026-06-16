@@ -34,6 +34,29 @@ const pillars = [
   },
 ];
 
+const proofs = [
+  {
+    sector: "Commerce",
+    name: "QLYK Studio",
+    href: "https://www.qlykstudio.fr/",
+  },
+  {
+    sector: "Médico-social & prévention",
+    name: "OSYS",
+    href: "https://www.osys14.com/",
+  },
+  {
+    sector: "Développement personnel",
+    name: "Cabinet Astraé",
+    href: "https://www.cabinet-astrae.fr/",
+  },
+  {
+    sector: "Éducation & prévention",
+    name: "LANGOCHAT",
+    href: "https://www.langochat.fr/",
+  },
+];
+
 export default function Page() {
   return (
     <main className={`${inter.className} page`}>
@@ -90,25 +113,26 @@ export default function Page() {
           <span>Une même organisation.</span>
         </div>
 
-        <section className="proofs">
-          <p>Réalisations complémentaires</p>
+        <section className="proofs-wheel" aria-label="Réalisations complémentaires">
+          <div className="proofs-wheel-head">
+            <p>Réalisations complémentaires</p>
+            <span>Glisser pour explorer</span>
+          </div>
 
-          <div>
-            <a
-              href="https://www.qlykstudio.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              QLYK Studio Auto
-            </a>
-
-            <a
-              href="https://www.cabinet-astrae.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cabinet Astraé
-            </a>
+          <div className="proofs-track">
+            {proofs.map((proof) => (
+              <a
+                key={proof.name}
+                href={proof.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proof-card"
+              >
+                <span>{proof.sector}</span>
+                <strong className={serif.className}>{proof.name}</strong>
+                <em>Découvrir</em>
+              </a>
+            ))}
           </div>
         </section>
 
