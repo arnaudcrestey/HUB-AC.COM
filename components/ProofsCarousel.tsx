@@ -22,7 +22,7 @@ const proofs = [
   },
   {
     field: "Médico-social & prévention",
-    name: "OSYS",
+    name: "Osys",
     description:
       "Permettre de faire le point sur une situation de violence au sein du couple.",
     href: "https://www.osys14.com/",
@@ -36,7 +36,7 @@ const proofs = [
   },
   {
     field: "Éducation & prévention",
-    name: "LANGOCHAT",
+    name: "LangOchat",
     description:
       "Aider les adultes à trouver les mots justes pour dialoguer avec les enfants.",
     href: "https://www.langochat.fr/",
