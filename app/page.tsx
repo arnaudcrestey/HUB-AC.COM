@@ -48,7 +48,7 @@ export default function Page() {
           <span>Écosystème</span>
         </header>
 
-        <section className="signature" aria-label="Signature Arnaud Crestey">
+        <section className="signature hero-signature" aria-label="Signature Arnaud Crestey">
           <div className={`${serif.className} ac`}>AC</div>
 
           <div className={`${serif.className} domain`}>
