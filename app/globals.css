@@ -1002,3 +1002,115 @@ a {
 .contact span {
   color: rgba(235, 238, 240, 0.72);
 }
+/* =======================================
+   HERO PREMIUM V2
+   ======================================= */
+
+.hero-signature {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-signature::before {
+  content: "";
+  position: absolute;
+  inset: -120px -200px;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(175, 205, 235, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 50% 70%,
+      rgba(216, 182, 122, 0.08),
+      transparent 35%
+    );
+
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.hero-signature .ac {
+  font-size: clamp(72px, 8vw, 124px);
+
+  letter-spacing: -0.14em;
+
+  color: #f5f1e8;
+
+  text-shadow:
+    0 0 40px rgba(255,255,255,0.08),
+    0 30px 80px rgba(0,0,0,0.55);
+
+  transform: translateX(-6px);
+
+  transition: transform 0.6s ease;
+}
+
+.hero-signature:hover .ac {
+  transform: translateX(-6px) translateY(-2px);
+}
+
+.hero-signature .domain {
+  margin-top: 10px;
+
+  font-size: clamp(24px, 2.2vw, 38px);
+
+  color: rgba(245,241,232,0.95);
+
+  text-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
+
+.hero-signature .signature-line {
+  width: 140px;
+  margin-top: 22px;
+  margin-bottom: 36px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(216,182,122,0.85),
+      rgba(210,220,230,0.65),
+      rgba(216,182,122,0.85),
+      transparent
+    );
+
+  box-shadow:
+    0 0 24px rgba(216,182,122,0.22);
+}
+
+.hero-signature .baseline {
+  max-width: 760px;
+
+  font-size: clamp(12px, 1vw, 16px);
+
+  letter-spacing: 0.24em;
+
+  line-height: 2;
+
+  color: rgba(241,232,210,0.92);
+
+  text-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+}
+
+.method-block {
+  margin-top: 70px;
+}
+
+.method-block h1 {
+  font-size: clamp(42px, 5vw, 82px);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.07em;
+
+  color: #f5f1e8;
+
+  text-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+}
