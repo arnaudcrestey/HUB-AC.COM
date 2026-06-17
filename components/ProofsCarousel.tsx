@@ -15,7 +15,7 @@ import {
 const proofs = [
   {
     field: "Commerce",
-    name: "QLYK Studio",
+    name: "Qlyk Studio",
     description:
       "Valoriser un véhicule avec des visuels premium conçus pour capter l’attention.",
     href: "https://www.qlykstudio.fr/",
