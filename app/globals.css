@@ -828,3 +828,177 @@ a {
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
+/* === PREMIUM B&O / PORSCHE OVERRIDE === */
+
+.page {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(120, 150, 170, 0.18), transparent 30rem),
+    radial-gradient(circle at 82% 22%, rgba(184, 147, 95, 0.10), transparent 34rem),
+    linear-gradient(180deg, #020406 0%, #070b10 45%, #020304 100%);
+}
+
+.frame {
+  color: #f3efe8;
+  border: 1px solid rgba(210, 220, 225, 0.22);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(130, 160, 180, 0.18), transparent 34rem),
+    radial-gradient(circle at 50% 40%, rgba(216, 182, 122, 0.08), transparent 42rem),
+    linear-gradient(135deg, #080c11 0%, #0d131a 48%, #030507 100%);
+  box-shadow:
+    0 120px 260px rgba(0, 0, 0, 0.86),
+    0 48px 130px rgba(0, 0, 0, 0.62),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+
+.frame::before {
+  border-color: rgba(220, 228, 232, 0.18);
+}
+
+.frame::after {
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(150, 180, 205, 0.08) 42%, transparent 58%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 13px
+    ),
+    radial-gradient(circle at 50% 52%, transparent 58%, rgba(0, 0, 0, 0.42) 100%);
+}
+
+.dark-arch {
+  background:
+    radial-gradient(circle at 50% 26%, rgba(170, 205, 230, 0.20), transparent 18rem),
+    radial-gradient(circle at 50% 58%, rgba(216, 182, 122, 0.12), transparent 34rem),
+    linear-gradient(180deg, #020406 0%, #06090d 64%, rgba(6, 9, 13, 0) 100%);
+  box-shadow:
+    0 70px 180px rgba(0, 0, 0, 0.70),
+    inset 0 -1px 0 rgba(220, 228, 232, 0.18);
+}
+
+.topbar,
+.dimension,
+.subtitle,
+.access,
+.proofs-wheel-head span,
+.possibilities-head span,
+.proof-field,
+.proof-access {
+  color: rgba(216, 182, 122, 0.88);
+}
+
+.ac,
+.domain {
+  color: #f5f1e8;
+  text-shadow:
+    0 0 34px rgba(245, 241, 232, 0.18),
+    0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.signature-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(216, 182, 122, 0.72),
+    rgba(220, 230, 235, 0.55),
+    rgba(216, 182, 122, 0.72),
+    transparent
+  );
+}
+
+.baseline {
+  color: rgba(235, 226, 205, 0.92);
+}
+
+.method-block h1,
+.proofs-wheel-head h2,
+.possibilities-head h3 {
+  color: #f4f0e8;
+  text-shadow: 0 28px 90px rgba(0, 0, 0, 0.45);
+}
+
+.card,
+.proof-card,
+.possibility-card {
+  border: 1px solid rgba(220, 228, 232, 0.16);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.10), transparent 18rem),
+    linear-gradient(180deg, rgba(17, 23, 31, 0.96), rgba(7, 11, 16, 0.98));
+  box-shadow:
+    0 44px 110px rgba(0, 0, 0, 0.46),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.card:hover,
+.proof-card:hover {
+  border-color: rgba(216, 182, 122, 0.42);
+  box-shadow:
+    0 56px 130px rgba(0, 0, 0, 0.58),
+    0 0 80px rgba(130, 160, 180, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.card h2,
+.proof-card strong,
+.possibility-card h4,
+.possibility-icon {
+  color: #f6f1e8;
+}
+
+.card p,
+.proof-card p,
+.possibility-card p,
+.proofs-wheel-head p,
+.possibilities-head p {
+  color: rgba(226, 230, 232, 0.68);
+}
+
+.card::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(216, 182, 122, 0.54),
+    rgba(170, 205, 230, 0.42),
+    transparent
+  );
+}
+
+.card::after {
+  border-color: rgba(220, 228, 232, 0.16);
+}
+
+.ecosystem-note {
+  color: rgba(216, 182, 122, 0.58);
+}
+
+.proofs-wheel,
+.possibilities,
+.proofs,
+.contact {
+  border-top-color: rgba(220, 228, 232, 0.12);
+}
+
+.carousel-button,
+.possibilities-button,
+.possibilities-cta {
+  border-color: rgba(220, 228, 232, 0.18);
+  background: rgba(12, 18, 24, 0.74);
+  color: rgba(245, 241, 232, 0.88);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.carousel-button:hover,
+.possibilities-button:hover,
+.possibilities-cta:hover {
+  background: rgba(20, 28, 36, 0.92);
+  border-color: rgba(216, 182, 122, 0.42);
+}
+
+.contact,
+.contact a,
+.contact span {
+  color: rgba(235, 238, 240, 0.72);
+}
