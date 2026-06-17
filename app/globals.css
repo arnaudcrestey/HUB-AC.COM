@@ -496,7 +496,7 @@ a {
 
 .proofs-wheel-head span {
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 900;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -505,8 +505,8 @@ a {
 
 .proofs-wheel-head h2 {
   margin: 12px 0 0;
-  font-size: 34px;
-  line-height: 1;
+  font-size: 52px;
+  line-height: 0.95;
   font-weight: 500;
   letter-spacing: -0.055em;
   color: #17110b;
@@ -664,6 +664,21 @@ a {
   .proof-card {
     flex-basis: 82%;
   }
+  .card {
+  min-height: 340px;
+  padding: 24px 22px 24px;
+   }
+
+.card h2 {
+  font-size: 44px;
+  margin-top: 18px;
+   }
+
+.card p {
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 16px 0 20px;
+   }
 }
 .possibilities {
   position: relative;
@@ -682,7 +697,7 @@ a {
 
 .possibilities-head span {
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 900;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -691,8 +706,8 @@ a {
 
 .possibilities-head h3 {
   margin: 12px 0 0;
-  font-size: 32px;
-  line-height: 1;
+  font-size: 52px;
+  line-height: 0.95;
   font-weight: 500;
   letter-spacing: -0.055em;
   color: #17110b;
