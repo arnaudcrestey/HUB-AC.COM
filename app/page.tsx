@@ -67,12 +67,10 @@ export default function Page() {
         </section>
 
         <section className="method-block">
-          <h1 className={serif.className}>
-            Comprendre
-            <br />
-            avant d’agir.
-          </h1>
-        </section>
+  <h1 className={`${serif.className} method-title`}>
+    Comprendre avant d’agir.
+  </h1>
+</section>
 
         <section
           className="cards"
