@@ -197,7 +197,7 @@ export function ProofsCarousel({ serifClassName }: ProofsCarouselProps) {
                   </div>
 
                   <h4>{item.title}</h4>
-                  <p>{item.text}</p>
+                  <p style={{ whiteSpace: "pre-line" }}>{item.text}</p>
                 </article>
               );
             })}
