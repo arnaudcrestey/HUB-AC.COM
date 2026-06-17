@@ -1119,9 +1119,10 @@ a {
   }
 
   .method-block h1 {
-    font-size: 34px;
-    line-height: 0.92;
-  }
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
 
   .method-title {
     white-space: normal;
