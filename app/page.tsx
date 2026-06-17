@@ -62,7 +62,7 @@ export default function Page() {
   <br />
   grâce à l’IA, au service de l’humain.
 </p>
-
+</section>
         <section className="method-block">
   <h1 className={`${serif.className} method-title`}>
     Comprendre avant d’agir.
