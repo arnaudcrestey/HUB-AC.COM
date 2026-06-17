@@ -328,19 +328,21 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 7px;
-  font-size: 11px;
+  font-size: 15px;
   color: rgba(73, 61, 45, 0.58);
 }
 
 .contact span {
   letter-spacing: 0.12em;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .contact a {
-  color: rgba(34, 27, 20, 0.78);
-  font-weight: 750;
+  color: rgba(245, 241, 232, 0.92);
+  font-weight: 700;
+  font-size: 16px;
 }
-
 .circle {
   position: absolute;
   z-index: 2;
@@ -665,20 +667,19 @@ a {
     flex-basis: 82%;
   }
   .card {
-  min-height: 340px;
-  padding: 24px 22px 24px;
-   }
+  min-height: 300px;
+  padding: 20px 20px 20px;
+}
 
 .card h2 {
-  font-size: 44px;
-  margin-top: 18px;
-   }
+  font-size: 38px;
+  margin-top: 14px;
+}
 
 .card p {
-  font-size: 16px;
-  line-height: 1.55;
-  margin: 16px 0 20px;
-   }
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 14px 0 18px;
 }
 .possibilities {
   position: relative;
