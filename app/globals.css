@@ -1116,3 +1116,12 @@ a {
     line-height: 0.92;
   }
 }
+.method-title {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .method-title {
+    white-space: normal;
+  }
+}
