@@ -680,7 +680,8 @@ a {
   font-size: 15px;
   line-height: 1.5;
   margin: 14px 0 18px;
-}
+    }
+  }
 .possibilities {
   position: relative;
   z-index: 10;
