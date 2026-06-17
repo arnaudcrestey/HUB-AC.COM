@@ -55,10 +55,10 @@ const proofs = [
 
 const possibilities = [
   {
-    title: "Organisation & entreprise",
-    text: "Structurer, clarifier et piloter une activité.",
-    icon: Building2,
-  },
+  title: "Entreprises & organisations",
+  text: "Structurer, clarifier\net piloter une activité.",
+  icon: Building2,
+},
   {
     title: "Ressources humaines",
     text: "Recrutement, équipes et dynamiques humaines.",
