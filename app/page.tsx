@@ -63,10 +63,9 @@ export default function Page() {
           />
 
           <p className="baseline">
-            Développer et structurer les activités
-            <br />
-            grâce à l’IA, au service de l’humain.
-          </p>
+  <span>Développer et structurer les activités</span>
+  <span>grâce à l’IA, au service de l’humain.</span>
+</p>
         </section>
 
         <section className="method-block">
