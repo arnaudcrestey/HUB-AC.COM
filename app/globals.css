@@ -1024,13 +1024,13 @@ a {
    ======================================= */
 
 /* =======================================
-   HERO SIGNATURE IMAGE — COMPACT FINAL
+   HERO SIGNATURE IMAGE — COMPACT PREMIUM
    ======================================= */
 
 .hero-signature {
   position: relative;
   isolation: isolate;
-  margin-top: 22px;
+  margin-top: 24px;
   text-align: center;
 }
 
@@ -1047,36 +1047,36 @@ a {
 }
 
 .signature-logo {
-  width: clamp(150px, 38vw, 235px);
+  width: clamp(165px, 44vw, 275px);
   height: auto;
   display: block;
   margin: 0 auto;
   object-fit: contain;
-  opacity: 0.96;
+  opacity: 0.97;
   filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.38));
 }
 
 .hero-signature .baseline {
-  max-width: 620px;
-  margin: 14px auto 0;
-  font-size: clamp(10px, 2.6vw, 16px);
+  max-width: 720px;
+  margin: 16px auto 0;
+  font-size: clamp(12px, 3vw, 17px);
   font-weight: 900;
   line-height: 1.55;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: rgba(241, 232, 210, 0.96);
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.42);
 }
 
 .method-block {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 .method-block h1 {
-  font-size: clamp(25px, 6vw, 38px);
+  font-size: clamp(22px, 5.2vw, 34px);
   line-height: 1;
   letter-spacing: -0.045em;
-  color: rgba(247, 242, 232, 0.94);
+  color: rgba(247, 242, 232, 0.9);
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
 }
 
@@ -1090,19 +1090,23 @@ a {
   }
 
   .signature-logo {
-    width: clamp(190px, 18vw, 255px);
+    width: clamp(220px, 20vw, 310px);
   }
 
   .hero-signature .baseline {
-    max-width: 880px;
+    max-width: 900px;
     margin-top: 18px;
-    font-size: clamp(13px, 1.18vw, 17px);
-    line-height: 1.65;
+    font-size: clamp(14px, 1.28vw, 18px);
+    line-height: 1.58;
     letter-spacing: 0.2em;
   }
 
   .method-block {
-    margin-top: 30px;
+    margin-top: 24px;
+  }
+
+  .method-block h1 {
+    font-size: clamp(24px, 2vw, 32px);
   }
 
   .method-title {
@@ -1112,18 +1116,18 @@ a {
 
 @media (min-width: 1100px) {
   .signature-logo {
-    width: 230px;
+    width: 285px;
   }
 
   .hero-signature .baseline {
-    max-width: 900px;
+    max-width: 920px;
   }
 
   .method-block {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .cards {
-    margin-top: 78px;
+    margin-top: 70px;
   }
 }
