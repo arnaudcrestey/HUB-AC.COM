@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { ProofsCarousel } from "@/components/ProofsCarousel";
 
@@ -48,26 +49,31 @@ export default function Page() {
           <span>Écosystème</span>
         </header>
 
-        <section className="signature hero-signature" aria-label="Signature Arnaud Crestey">
-          <div className={`${serif.className} ac`}>AC</div>
-
-          <div className={`${serif.className} domain`}>
-            arnaudcrestey.com
-          </div>
-
-          <div className="signature-line" />
+        <section
+          className="signature hero-signature"
+          aria-label="Signature Arnaud Crestey"
+        >
+          <Image
+            src="/branding/signature-ac.png"
+            alt="Arnaud Crestey"
+            width={900}
+            height={900}
+            priority
+            className="signature-logo"
+          />
 
           <p className="baseline">
-  Développer et structurer les activités
-  <br />
-  grâce à l’IA, au service de l’humain.
-</p>
-</section>
+            Développer et structurer les activités
+            <br />
+            grâce à l’IA, au service de l’humain.
+          </p>
+        </section>
+
         <section className="method-block">
-  <h1 className={`${serif.className} method-title`}>
-    Comprendre avant d’agir.
-  </h1>
-</section>
+          <h1 className={`${serif.className} method-title`}>
+            Comprendre avant d’agir.
+          </h1>
+        </section>
 
         <section
           className="cards"
