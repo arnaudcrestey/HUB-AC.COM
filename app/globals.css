@@ -1023,132 +1023,103 @@ a {
    HERO PREMIUM V2
    ======================================= */
 
+/* =======================================
+   HERO SIGNATURE IMAGE — MOBILE FIRST
+   ======================================= */
+
 .hero-signature {
   position: relative;
   isolation: isolate;
+  margin-top: 34px;
+  text-align: center;
 }
 
 .hero-signature::before {
   content: "";
   position: absolute;
-  inset: -120px -220px;
+  inset: -90px -120px;
   z-index: -1;
   background:
-    radial-gradient(circle at 50% 34%, rgba(175, 205, 235, 0.12), transparent 30%),
-    radial-gradient(circle at 50% 72%, rgba(216, 182, 122, 0.07), transparent 38%);
-  filter: blur(42px);
+    radial-gradient(circle at 50% 36%, rgba(175, 205, 235, 0.12), transparent 32%),
+    radial-gradient(circle at 50% 72%, rgba(216, 182, 122, 0.08), transparent 42%);
+  filter: blur(38px);
   pointer-events: none;
 }
 
-.hero-signature .ac {
-  font-size: clamp(110px, 10vw, 170px);
-  font-weight: 300;
-  line-height: 0.78;
-  letter-spacing: -0.18em;
-  color: #f7f2e8;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
-  text-shadow:
-    0 0 26px rgba(255, 255, 255, 0.06),
-    0 30px 80px rgba(0, 0, 0, 0.55);
-  transform: translateX(-8px);
-  transition: transform 0.6s ease;
-}
-
-.hero-signature:hover .ac {
-  transform: translateX(-8px) translateY(-2px);
-}
-
-.hero-signature .domain {
-  margin-top: 12px;
-  font-size: clamp(28px, 2.6vw, 42px);
-  color: rgba(247, 242, 232, 0.96);
-  text-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
-}
-
-.hero-signature .signature-line {
-  width: 150px;
-  height: 1px;
-  margin: 24px auto 42px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(216, 182, 122, 0.78),
-    rgba(210, 220, 230, 0.58),
-    rgba(216, 182, 122, 0.78),
-    transparent
-  );
-  box-shadow: 0 0 20px rgba(216, 182, 122, 0.18);
+.signature-logo {
+  width: clamp(185px, 58vw, 285px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  opacity: 0.96;
+  filter: drop-shadow(0 18px 42px rgba(0, 0, 0, 0.42));
 }
 
 .hero-signature .baseline {
-  max-width: 1100px;
-  margin: 0 auto;
-  font-size: clamp(18px, 1.45vw, 24px);
-  font-weight: 850;
-  line-height: 1.85;
-  letter-spacing: 0.22em;
+  max-width: 360px;
+  margin: 22px auto 0;
+  font-size: clamp(11px, 3.4vw, 15px);
+  font-weight: 900;
+  line-height: 1.75;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: rgba(241, 232, 210, 0.96);
   text-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
 }
 
 .method-block {
-  margin-top: 54px;
+  margin-top: 34px;
 }
 
 .method-block h1 {
-  font-size: clamp(30px, 2.8vw, 48px);
+  font-size: clamp(27px, 7vw, 42px);
   line-height: 1;
   letter-spacing: -0.045em;
-  color: rgba(247, 242, 232, 0.92);
+  color: rgba(247, 242, 232, 0.94);
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
 }
 
 .method-title {
-  white-space: nowrap;
+  white-space: normal;
 }
 
-@media (max-width: 720px) {
-  .hero-signature .ac {
-    font-size: 72px;
-    font-weight: 400;
-    letter-spacing: -0.16em;
-    transform: translateX(-5px);
+@media (min-width: 760px) {
+  .hero-signature {
+    margin-top: 52px;
   }
 
-  .hero-signature:hover .ac {
-    transform: translateX(-5px);
-  }
-
-  .hero-signature .domain {
-    font-size: 24px;
+  .signature-logo {
+    width: clamp(240px, 24vw, 330px);
   }
 
   .hero-signature .baseline {
-    max-width: 340px;
-    font-size: 11px;
-    line-height: 1.8;
-    letter-spacing: 0.18em;
+    max-width: 900px;
+    margin-top: 28px;
+    font-size: clamp(15px, 1.35vw, 21px);
+    line-height: 1.85;
+    letter-spacing: 0.22em;
   }
 
   .method-block {
-    margin-top: 38px;
+    margin-top: 46px;
   }
-
-  .method-block h1 {
-  font-size: 25px;
-  line-height: 1;
-  letter-spacing: -0.035em;
-}
 
   .method-title {
-    white-space: normal;
+    white-space: nowrap;
   }
 }
-.signature-logo {
-  width: clamp(220px, 30vw, 380px);
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
+
+@media (min-width: 1100px) {
+  .signature-logo {
+    width: 300px;
+  }
+
+  .hero-signature .baseline {
+    margin-top: 30px;
+  }
+
+  .method-block {
+    margin-top: 50px;
+  }
 }
