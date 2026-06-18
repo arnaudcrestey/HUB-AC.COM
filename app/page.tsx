@@ -88,13 +88,9 @@ export default function Page() {
               className="card"
             >
               <span className="dimension">{pillar.dimension}</span>
-
               <h2 className={serif.className}>{pillar.name}</h2>
-
               <span className="subtitle">{pillar.subtitle}</span>
-
               <p>{pillar.text}</p>
-
               <span className="access">Découvrir</span>
             </a>
           ))}
