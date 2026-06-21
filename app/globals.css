@@ -1154,3 +1154,8 @@ a {
     min-height: 360px;
   }
 }
+@media (max-width: 720px) {
+  .cards {
+    margin-top: 96px;
+  }
+}
