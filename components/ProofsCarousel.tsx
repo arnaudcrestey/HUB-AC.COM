@@ -28,6 +28,13 @@ const proofs = [
     href: "https://www.osys14.com/",
   },
   {
+  field: "Recrutement & collaborations",
+  name: "ARHI",
+  description:
+    "Parce qu’une collaboration repose avant tout sur des femmes et des hommes.",
+  href: "https://www.arhi.fr/",
+},
+  {
     field: "Développement personnel",
     name: "Cabinet Astraé",
     description:
@@ -42,14 +49,13 @@ const proofs = [
     href: "https://www.langochat.fr/",
   },
   {
-  field: "Vie professionnelle & prévention",
-  name: "B.E.S.T",
-  description:
-    "Permettre aux salariés de faire le point sur une situation professionnelle difficile.",
-  href: "https://best.systia.fr/",
-},
+    field: "Vie professionnelle & prévention",
+    name: "B.E.S.T",
+    description:
+      "Permettre aux salariés de faire le point sur une situation professionnelle difficile.",
+    href: "https://best.systia.fr/",
+  },
 ];
-
 
 
 
