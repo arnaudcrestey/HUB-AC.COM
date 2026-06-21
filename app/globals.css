@@ -1143,9 +1143,14 @@ a {
   }
 
   .cards {
-    max-width: 760px;
+    max-width: 980px;
     margin-top: 70px;
-    grid-template-columns: repeat(2, minmax(0, 330px));
+    grid-template-columns: repeat(2, minmax(0, 450px));
     justify-content: center;
+    gap: 28px;
+  }
+
+  .card {
+    min-height: 360px;
   }
 }
