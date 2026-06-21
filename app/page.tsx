@@ -14,27 +14,20 @@ const inter = Inter({
 
 const pillars = [
   {
-    dimension: "Activité",
-    name: "SYSTIA",
-    subtitle: "Structurer l’activité",
-    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de soutenir le développement.",
-    href: "https://www.systia.fr/",
-  },
-  {
-    dimension: "Collaborations",
-    name: "ARHI",
-    subtitle: "Éclairer les collaborations",
-    text: "Lire les compatibilités humaines, les recrutements, les équipes et les dynamiques qui influencent une organisation.",
-    href: "https://arhi.fr/",
-  },
-  {
     dimension: "Confiance",
     name: "UNYKO",
     subtitle: "Mesurer la confiance",
     text: "Identifier les signaux qui rendent une organisation compréhensible, crédible et recommandable à l’ère de l’IA.",
     href: "https://unyko.arnaudcrestey.com/",
   },
-];
+  {
+    dimension: "Activité",
+    name: "SYSTIA",
+    subtitle: "Structurer l’activité",
+    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de soutenir le développement.",
+    href: "https://www.systia.fr/",
+  },
+  ];
 
 export default function Page() {
   return (
