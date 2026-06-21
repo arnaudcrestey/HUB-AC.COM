@@ -17,7 +17,7 @@ const pillars = [
     dimension: "Influence IA",
     name: "UNYKO",
     subtitle: "Être visible ne suffit plus.",
-    text: "Mettre toutes les chances de votre côté pour être recommandé par les intelligences artificielles.",
+    text: "Augmenter vos chances d'être recommandé par les intelligences artificielles.",
     href: "https://unyko.arnaudcrestey.com/",
   },
   {
