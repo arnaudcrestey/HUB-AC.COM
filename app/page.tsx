@@ -14,20 +14,20 @@ const inter = Inter({
 
 const pillars = [
   {
-    dimension: "Confiance",
+    dimension: "Influence IA",
     name: "UNYKO",
-    subtitle: "Mesurer la confiance",
-    text: "Identifier les signaux qui rendent une organisation compréhensible, crédible et recommandable à l’ère de l’IA.",
+    subtitle: "À l’ère de l’influence IA",
+    text: "Aider les organisations à gagner en visibilité, en crédibilité et en confiance dans un monde où les intelligences artificielles orientent de plus en plus les choix.",
     href: "https://unyko.arnaudcrestey.com/",
   },
   {
-    dimension: "Activité",
+    dimension: "Systèmes",
     name: "SYSTIA",
-    subtitle: "Structurer l’activité",
-    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de soutenir le développement.",
+    subtitle: "Structurer pour développer",
+    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de générer plus de visibilité, plus de clients et plus de confiance.",
     href: "https://www.systia.fr/",
   },
-  ];
+];
 
 export default function Page() {
   return (
@@ -56,9 +56,9 @@ export default function Page() {
           />
 
           <p className="baseline">
-  <span>Développer et structurer les activités</span>
-  <span>grâce à l’IA, au service de l’humain.</span>
-</p>
+            <span>Développer et structurer les activités</span>
+            <span>grâce à l’IA, au service de l’humain.</span>
+          </p>
         </section>
 
         <section className="method-block">
@@ -69,7 +69,7 @@ export default function Page() {
 
         <section
           className="cards"
-          aria-label="Les trois piliers de l'écosystème"
+          aria-label="Les piliers de l'écosystème"
         >
           {pillars.map((pillar) => (
             <a
@@ -92,8 +92,8 @@ export default function Page() {
           className="ecosystem-note"
           aria-label="Positionnement de l'écosystème"
         >
-          <span>Trois lectures.</span>
-          <span>Une même organisation.</span>
+          <span>Influence. Systèmes.</span>
+          <span>Une même exigence de clarté.</span>
         </section>
 
         <ProofsCarousel serifClassName={serif.className} />
