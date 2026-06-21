@@ -422,10 +422,10 @@ a {
   color: #0f0b07;
   text-shadow: 0 18px 50px rgba(255, 255, 255, 0.36);
 }
-
-  .cards {
+.cards {
     margin-top: 110px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 330px));
+    justify-content: center;
     gap: 22px;
   }
 
@@ -1143,6 +1143,9 @@ a {
   }
 
   .cards {
+    max-width: 760px;
     margin-top: 70px;
+    grid-template-columns: repeat(2, minmax(0, 330px));
+    justify-content: center;
   }
 }
