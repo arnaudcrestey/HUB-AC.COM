@@ -24,7 +24,7 @@ const pillars = [
     dimension: "Systèmes",
     name: "SYSTIA",
     subtitle: "Structurer pour développer",
-    text: "Concevoir les outils, les automatisations et les systèmes numériques qui soutiennent durablement le développement d’une activité.",
+    text: "Concevoir les outils, les automatisations et les systèmes numériques qui génèrent des demandes qualifiées.",
     href: "https://www.systia.fr/",
   },
 ];
@@ -86,12 +86,11 @@ export default function Page() {
         </section>
 
         <section
-          className="ecosystem-note"
-          aria-label="Positionnement de l'écosystème"
-        >
-          <span>Comprendre. Construire.</span>
-          <span>Développer avec clarté.</span>
-        </section>
+  className="ecosystem-note"
+  aria-label="Positionnement de l'écosystème"
+>
+  <span>COMPRIS • CHOISI • CONTACTÉ</span>
+</section>
 
         <ProofsCarousel serifClassName={serif.className} />
 
