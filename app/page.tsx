@@ -16,15 +16,15 @@ const pillars = [
   {
     dimension: "Influence IA",
     name: "UNYKO",
-    subtitle: "À l’ère de l’influence IA",
-    text: "Aider les organisations à gagner en visibilité, en crédibilité et en confiance dans un monde où les intelligences artificielles orientent de plus en plus les choix.",
+    subtitle: "Être visible ne suffit plus.",
+    text: "Mettre toutes les chances de votre côté pour être recommandé par les intelligences artificielles.",
     href: "https://unyko.arnaudcrestey.com/",
   },
   {
     dimension: "Systèmes",
     name: "SYSTIA",
     subtitle: "Structurer pour développer",
-    text: "Clarifier l’offre, organiser les systèmes et concevoir des outils numériques capables de générer plus de visibilité, plus de clients et plus de confiance.",
+    text: "Concevoir les outils, les automatisations et les systèmes numériques qui soutiennent durablement le développement d’une activité.",
     href: "https://www.systia.fr/",
   },
 ];
@@ -39,7 +39,7 @@ export default function Page() {
         <div className="circle circle-three" />
 
         <header className="topbar">
-          <span>Écosystème</span>
+          <span>CABINET D'INFLUENCE NUMÉRIQUE</span>
         </header>
 
         <section
@@ -67,10 +67,7 @@ export default function Page() {
           </h1>
         </section>
 
-        <section
-          className="cards"
-          aria-label="Les piliers de l'écosystème"
-        >
+        <section className="cards" aria-label="Les piliers de l'écosystème">
           {pillars.map((pillar) => (
             <a
               key={pillar.name}
@@ -92,8 +89,8 @@ export default function Page() {
           className="ecosystem-note"
           aria-label="Positionnement de l'écosystème"
         >
-          <span>Influence. Systèmes.</span>
-          <span>Une même exigence de clarté.</span>
+          <span>Comprendre. Construire.</span>
+          <span>Développer avec clarté.</span>
         </section>
 
         <ProofsCarousel serifClassName={serif.className} />
