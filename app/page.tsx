@@ -39,7 +39,7 @@ export default function Page() {
         <div className="circle circle-three" />
 
         <header className="topbar">
-          <span>CABINET D'INFLUENCE NUMÉRIQUE</span>
+          <span>COMPRENDRE AVANT D'AGIR</span>
         </header>
 
         <section
@@ -59,12 +59,6 @@ export default function Page() {
             <span>Développer et structurer les activités</span>
             <span>grâce à l’IA, au service de l’humain.</span>
           </p>
-        </section>
-
-        <section className="method-block">
-          <h1 className={`${serif.className} method-title`}>
-            Comprendre avant d’agir.
-          </h1>
         </section>
 
         <section className="cards" aria-label="Les piliers de l'écosystème">
