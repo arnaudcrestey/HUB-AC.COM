@@ -50,7 +50,7 @@ const proofs = [
   },
   {
   field: "Transmission & mémoire familiale",
-  name: "RACINAE",
+  name: "Racinae",
   description:
     "Le premier livre qui s'écrit pendant que votre enfant grandit. Projet actuellement en construction.",
   href: "https://www.racinae.org/",
