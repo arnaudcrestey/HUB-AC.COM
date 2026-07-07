@@ -64,7 +64,7 @@ const proofs = [
   },
   {
   field: "Dialogue & prévention",
-  name: "C·ZAME",
+  name: "C·zame",
   description:
     "Aider à engager le dialogue autour des addictions.",
   href: "https://czame.fr/",
