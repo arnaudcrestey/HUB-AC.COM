@@ -1160,29 +1160,31 @@ a {
   }
 }
 /* =======================================
-   HERO POSITIONING — MOBILE FIRST
+   HERO POSITIONING — PREMIUM BALANCED
    ======================================= */
 
 .hero-positioning {
   position: relative;
   z-index: 10;
-  max-width: 760px;
-  margin: 30px auto 0;
-  padding: 0 10px;
+  max-width: 820px;
+  margin: 44px auto 0;
+  padding: 0 18px;
   text-align: center;
 }
 
 .hero-positioning-lead {
-  margin: 0;
+  max-width: 760px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: clamp(18px, 5.4vw, 30px);
-  font-weight: 700;
+  gap: 8px;
+  font-size: clamp(20px, 4.6vw, 36px);
+  font-weight: 800;
   line-height: 1.08;
-  letter-spacing: -0.045em;
-  color: rgba(247, 242, 232, 0.96);
-  text-shadow: 0 20px 60px rgba(0, 0, 0, 0.48);
+  letter-spacing: -0.055em;
+  color: rgba(247, 242, 232, 0.94);
+  text-wrap: balance;
+  text-shadow: 0 22px 70px rgba(0, 0, 0, 0.5);
 }
 
 .hero-positioning-lead span {
@@ -1190,47 +1192,64 @@ a {
 }
 
 .hero-positioning-text {
-  max-width: 680px;
-  margin: 16px auto 0;
-  font-size: clamp(13px, 3.6vw, 16px);
-  font-weight: 500;
-  line-height: 1.65;
-  color: rgba(226, 230, 232, 0.72);
+  max-width: 640px;
+  margin: 22px auto 0;
+  font-size: clamp(12px, 2.2vw, 14px);
+  font-weight: 600;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+  color: rgba(226, 230, 232, 0.62);
+  text-wrap: balance;
 }
 
 @media (max-width: 720px) {
   .hero-positioning {
-    margin-top: 26px;
+    margin-top: 34px;
+    padding-inline: 14px;
+  }
+
+  .hero-positioning-lead {
+    max-width: 340px;
+    gap: 7px;
+    font-size: clamp(22px, 7vw, 28px);
+    line-height: 1.04;
+  }
+
+  .hero-positioning-text {
+    max-width: 330px;
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.65;
   }
 
   .cards {
-    margin-top: 44px;
+    margin-top: 54px;
   }
 }
 
 @media (min-width: 760px) {
   .hero-positioning {
-    margin-top: 38px;
+    margin-top: 50px;
   }
 
   .hero-positioning-lead {
-    font-size: clamp(28px, 3.2vw, 42px);
-    line-height: 1.02;
+    font-size: clamp(28px, 2.7vw, 38px);
+    line-height: 1.06;
   }
 
   .hero-positioning-text {
-    margin-top: 18px;
-    font-size: 16px;
+    margin-top: 22px;
+    font-size: 14px;
     line-height: 1.75;
   }
 }
 
 @media (min-width: 1100px) {
   .hero-positioning {
-    margin-top: 42px;
+    margin-top: 54px;
   }
 
   .cards {
-    margin-top: 56px;
+    margin-top: 74px;
   }
 }
