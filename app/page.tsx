@@ -39,7 +39,7 @@ export default function Page() {
         <div className="circle circle-three" />
 
         <header className="topbar">
-          <span>COMPRENDRE AVANT D'AGIR</span>
+          <span>COMPRENDRE AVANT D&apos;AGIR</span>
         </header>
 
         <section
@@ -58,6 +58,22 @@ export default function Page() {
           <p className="baseline">
             <span>Développer et structurer les activités</span>
             <span>grâce à l’IA, au service de l’humain.</span>
+          </p>
+        </section>
+
+        <section className="hero-positioning" aria-label="Positionnement">
+          <p className="hero-positioning-lead">
+            <span>Vous êtes peut-être excellent dans votre métier.</span>
+            <span>
+              Cela ne garantit pas que votre activité génère suffisamment de
+              clients.
+            </span>
+          </p>
+
+          <p className="hero-positioning-text">
+            J&apos;aide les dirigeants à comprendre ce qui freine réellement
+            leur développement avant de concevoir les outils, les systèmes ou
+            les stratégies les plus adaptés.
           </p>
         </section>
 
@@ -80,11 +96,11 @@ export default function Page() {
         </section>
 
         <section
-  className="ecosystem-note"
-  aria-label="Positionnement de l'écosystème"
->
-  <span>COMPRIS • CHOISI • CONTACTÉ</span>
-</section>
+          className="ecosystem-note"
+          aria-label="Positionnement de l'écosystème"
+        >
+          <span>COMPRIS • CHOISI • CONTACTÉ</span>
+        </section>
 
         <ProofsCarousel serifClassName={serif.className} />
 
