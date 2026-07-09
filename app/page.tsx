@@ -13,19 +13,20 @@ const inter = Inter({
 });
 
 const pillars = [
-  {
-    dimension: "Influence IA",
-    name: "UNYKO",
-    subtitle: "Être visible ne suffit plus.",
-    text: "Augmenter vos chances d'être recommandé par les intelligences artificielles.",
-    href: "https://unyko.arnaudcrestey.com/",
-  },
+  
   {
     dimension: "Systèmes",
     name: "SYSTIA",
     subtitle: "Structurer pour développer",
     text: "Concevoir les outils, les automatisations et les systèmes numériques qui attirent plus de clients.",
     href: "https://www.systia.fr/",
+  },
+  {
+    dimension: "Influence IA",
+    name: "UNYKO",
+    subtitle: "Être visible ne suffit plus.",
+    text: "Augmenter vos chances d'être recommandé par les intelligences artificielles.",
+    href: "https://unyko.arnaudcrestey.com/",
   },
 ];
 
