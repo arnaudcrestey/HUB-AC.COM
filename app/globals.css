@@ -1018,3 +1018,141 @@ a {
 .contact a,
 .contact span {
   color: rgba(235, 238, 240, 0.72);
+}
+
+/* =======================================
+   HERO POSITIONING — FINAL BALANCED
+   ======================================= */
+
+.hero-positioning {
+  position: relative;
+  z-index: 10;
+  width: min(100%, 820px);
+  margin: 46px auto 0;
+  padding: 0 18px;
+  text-align: center;
+}
+
+.hero-positioning-lead {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: clamp(24px, 2.15vw, 34px);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  color: rgba(247, 242, 232, 0.94);
+  text-wrap: balance;
+  text-shadow: 0 22px 70px rgba(0, 0, 0, 0.52);
+}
+
+.hero-positioning-lead span {
+  display: block;
+}
+
+.hero-positioning-text {
+  max-width: 690px;
+  margin: 18px auto 0;
+  font-size: clamp(14px, 1vw, 17px);
+  font-weight: 620;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: rgba(226, 230, 232, 0.68);
+  text-wrap: balance;
+}
+
+.cards {
+  margin-top: 64px;
+}
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .hero-signature {
+    margin-top: 28px !important;
+  }
+
+  .signature-logo {
+    width: clamp(145px, 46vw, 190px) !important;
+  }
+
+  .hero-signature .baseline {
+    max-width: 310px !important;
+    margin-top: 22px !important;
+    gap: 6px !important;
+    font-size: 10px !important;
+    line-height: 1.65 !important;
+    letter-spacing: 0.13em !important;
+  }
+
+  .hero-positioning {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 34px;
+    padding: 0 12px;
+  }
+
+  .hero-positioning-lead {
+    max-width: 330px;
+    gap: 5px;
+    font-size: clamp(21px, 6.1vw, 26px);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+  }
+
+  .hero-positioning-text {
+    max-width: 315px;
+    margin-top: 16px;
+    font-size: 12.5px;
+    line-height: 1.62;
+    font-weight: 560;
+    color: rgba(226, 230, 232, 0.62);
+  }
+
+  .cards {
+    margin-top: 46px !important;
+  }
+}
+
+/* TABLETTE */
+@media (min-width: 721px) and (max-width: 1099px) {
+  .hero-positioning {
+    margin-top: 50px;
+    max-width: 760px;
+  }
+
+  .hero-positioning-lead {
+    max-width: 680px;
+    font-size: clamp(26px, 3.3vw, 34px);
+  }
+
+  .hero-positioning-text {
+    max-width: 620px;
+    font-size: 15px;
+  }
+
+  .cards {
+    margin-top: 58px;
+  }
+}
+
+/* DESKTOP LARGE */
+@media (min-width: 1100px) {
+  .hero-positioning {
+    margin-top: 78px;
+  }
+
+  .hero-positioning-lead {
+    font-size: clamp(28px, 2.15vw, 36px);
+  }
+
+  .hero-positioning-text {
+    margin-top: 22px;
+    font-size: 17px;
+  }
+
+  .cards {
+    margin-top: 76px;
+  }
+}
