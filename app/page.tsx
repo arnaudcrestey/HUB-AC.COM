@@ -72,8 +72,7 @@ export default function Page() {
           </p>
 
           <p className="hero-positioning-text">
-            J&apos;aide les dirigeants à comprendre ce qui freine réellement
-            leur développement avant de concevoir les solutions les plus adaptées.
+            J&apos;aide les dirigeants à clarifier ce dont leur activité a réellement besoin pour se développer, avant de concevoir les solutions les plus adaptées.
           </p>
         </section>
 
