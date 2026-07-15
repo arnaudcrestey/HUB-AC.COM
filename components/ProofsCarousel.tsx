@@ -21,6 +21,13 @@ const proofs = [
     href: "https://www.qlykstudio.fr/",
   },
   {
+  field: "Immobilier & valorisation",
+  name: "La Normandine",
+  description:
+    "Concevoir une expérience digitale premium pour révéler tout le potentiel d’un lieu d’exception.",
+  href: "https://normandine.arnaudcrestey.com/",
+},
+  {
     field: "Médico-social & prévention",
     name: "Osys",
     description:
