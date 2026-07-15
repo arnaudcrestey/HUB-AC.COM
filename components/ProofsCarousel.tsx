@@ -24,7 +24,7 @@ const proofs = [
   field: "Immobilier & valorisation",
   name: "La Normandine",
   description:
-    "Concevoir une expérience digitale premium pour révéler tout le potentiel d’un lieu d’exception.",
+    "Concevoir une expérience digitale pour valoriser un bien immobilier.",
   href: "https://normandine.arnaudcrestey.com/",
 },
   {
