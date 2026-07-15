@@ -21,7 +21,7 @@ const proofs = [
     href: "https://www.qlykstudio.fr/",
   },
   {
-  field: "Immobilier & valorisation",
+  field: "Immobilier & patrimoine",
   name: "La Normandine",
   description:
     "Concevoir une expérience digitale pour valoriser un bien immobilier.",
