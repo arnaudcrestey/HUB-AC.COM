@@ -102,6 +102,44 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Arnaud Crestey",
+      url: siteUrl,
+      image: `${siteUrl}/opengraph-image.jpg`,
+      jobTitle:
+        "Concepteur de systèmes numériques et de solutions intégrant l’intelligence artificielle",
+      description:
+        "Arnaud Crestey conçoit des systèmes numériques et des solutions intégrant l’intelligence artificielle pour développer, structurer et renforcer les activités.",
+      sameAs: ["https://www.linkedin.com/in/arnaudcrestey/"],
+      knowsAbout: [
+        "Intelligence artificielle",
+        "Systèmes numériques",
+        "Automatisation",
+        "Développement web",
+        "Structuration d’activité",
+        "Transformation numérique",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Arnaud Crestey",
+      description:
+        "Développer et structurer les activités grâce à l’intelligence artificielle, au service de l’humain.",
+      inLanguage: "fr-FR",
+      publisher: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+  ],
+};
+
 type RootLayoutProps = Readonly<{
   children: ReactNode;
 }>;
@@ -110,6 +148,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fr">
       <body>{children}</body>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
     </html>
   );
 }
