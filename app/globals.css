@@ -1122,13 +1122,21 @@ a {
   }
 
   .hero-signature .baseline {
-    max-width: 315px;
-    margin-top: 24px;
-    gap: 6px;
-    font-size: 13px;
-    line-height: 1.65;
-    letter-spacing: 0.13em;
-  }
+  width: calc(100% + 20px);
+  max-width: none;
+  margin: 24px -10px 0;
+  gap: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hero-signature .baseline span {
+  display: inline;
+  white-space: nowrap;
+}
 
   .hero-positioning {
     max-width: 370px;
