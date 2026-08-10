@@ -57,9 +57,8 @@ export default function Page() {
           />
 
           <p className="baseline">
-            <span>Développer et structurer les activités</span>
-            <span>grâce à l’IA, au service de l’humain.</span>
-          </p>
+  <span>Communication &amp; stratégie digitale</span>
+</p>
         </section>
 
         <section className="hero-positioning" aria-label="Positionnement">
